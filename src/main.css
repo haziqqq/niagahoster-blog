@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        letter-spacing: -0.02em;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.625rem;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    h5 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    h6 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+    }
+
+    ._text-h1 {
+        @apply text-black text-h1;
+    }
+
+    ._section-header {
+        @apply text-black text-h3;
+    }
+
+    ._paragraph-3 {
+        @apply text-black text-body-3;
+    }
+}
+
+@layer components {
+    /* Global Component */
+    .bg-linear {
+        background: linear-gradient(249.77deg, #0094FF -1.99%, #007AFF 43.52%, #026CE8 95.86%), #F0F7FF;
+    }
+
+    ._content-list {
+        @apply grid grid-cols-9 items-start gap-x-16;
+    }
+
+    ._name-tag {
+        @apply flex items-center space-x-3;
+    }
+
+    ._name-tag-profile {
+        @apply w-6 rounded-full;
+    }
+
+    ._name-tag ._name-tag-text {
+        @apply text-body-5-alt text-textColor-primary;
+    }
+
+    ._content-body {
+        @apply space-y-2;
+    }
+
+    ._content-body .body-title {
+        @apply text-h8 text-textColor-primary;
+    }
+
+    ._content-body ._body-desc {
+        @apply text-caption-2 text-textColor-secondary;
+    }
+
+    ._content-tag {
+        @apply flex items-center space-x-4;
+    }
+
+    ._tag-info {
+        @apply flex items-center space-x-4;
+    }
+
+    ._tag-info ._tag-text {
+        @apply text-body-5 text-textColor-primary;
+    }
+
+
+    /* End Global Component */
+
+    /* Navbar */
+    header ._navbar-menu {
+        @apply py-2 pr-4 pl-3 text-white text-sub-4 font-semibold rounded md:bg-transparent md:text-white md:p-0 flex items-center;
+    }
+
+    ._navbar {
+        @apply flex flex-wrap justify-between fixed py-5 z-50 top-0 left-0 right-0 items-center mx-auto px-2.5 lg:px-10 border-0 shadow-md;
+    }
+
+    ._navbar ._navbar-brand {
+        @apply flex items-center w-32 lg:w-40;
+    }
+
+    ._navbar ._navbar-toggler-container {
+        @apply flex md:order-2;
+    }
+
+    ._navbar ._navbar-toggler-container ._navbar-right-menu {
+        @apply flex items-center space-x-4;
+    }
+
+    ._navbar ._navbar-toggler-container ._navbar-toggler {
+        @apply inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600;
+    }
+    
+    ._navbar ._navbar-collapse {
+        @apply hidden justify-between items-center w-full md:flex md:w-auto md:order-1;
+    }
+
+    ._navbar ._navbar-collapse ._navbar-nav {
+        @apply flex flex-col mt-4 md:flex-row md:space-x-10 md:mt-0 md:text-sm md:font-semibold;
+    }
+
+    /* ._navbar ._navbar-menu {
+        @apply py-2 pr-4 pl-3 text-white text-sub-4 font-semibold rounded md:bg-transparent md:text-white md:p-0 flex items-center;
+    } */
+
+    ._menu {
+        @apply py-3 text-white hidden lg:flex justify-center mt-[5rem] space-x-10;
+    }
+
+    ._menu ._menu-item {
+        @apply inline-block;
+    }
+
+    ._menu ._menu-item ._menu-content {
+        @apply absolute hidden text-gray-700 pt-1;
+    }
+
+    /* ._menu ._menu-item ._menu-content ._sasa{
+        @apply ;
+    }  */ 
+    /* End Navbar */
+
+    /* Hero Section */
+    ._hero {
+        @apply bg-linear pt-16;
+    }
+    /* End Section */
+
+    /* Button */
+    .btn-primary {
+        @apply bg-btn-primaryState text-white;
+    }
+
+    .btn-secondary {
+        @apply text-button-1 font-bold bg-white border border-btn-primaryState text-btn-primaryState;
+    }
+
+    .btn-text {
+        @apply bg-transparent text-button-5 font-bold text-primary-hosterBlue hover:bg-btn-textStateHover hover:transition-all hover:duration-500 hover:ease-out;
+    }
+
+    .btn-small {
+        @apply px-6 py-3 text-button-5 font-bold rounded-4xl;
+    }
+
+    .btn-medium {
+        @apply px-10 py-3 text-button-3 font-bold rounded-4xl focus:border-2 focus:border-btn-disableState active:bg-btn-textStatePressed;
+    }
+
+    .btn-large {
+        @apply px-16 py-3 text-button-1 font-bold rounded-5xl;
+    } 
+    /* End */
+
+    /* Badge */
+    ._badge {
+        @apply text-body-5 text-primary-hosterBlue px-4 py-0.5 bg-primary-lightBlue rounded-4xl;
+    }
+    /* End Badge */
+
+    /* Search Input Component */
+    ._form-search {
+        @apply rounded-l-4xl px-8 py-3 border border-other-border border-r-0 text-body-3-alt w-[15.938rem] lg:w-[33.75rem] focus:ring-primary-hosterBlue focus:border-primary-hosterBlue focus:border-2;
+    }
+
+    .form-search__mobile {
+        @apply rounded-l-4xl px-[1.125rem] py-3 border border-other-border border-r-0 text-body-3-alt w-[12rem] focus:border-primary-hosterBlue focus:border-2;
+    }
+
+    ._search-btn {
+        @apply rounded-r-4xl border border-l-0 px-[1.125rem] lg:px-8 border-other-border bg-white;
+    }
+
+    .search-btn__mobile {
+        @apply rounded-r-4xl border border-l-0 px-[1.125rem] border-other-border bg-white focus:ring-primary-hosterBlue focus:border-primary-hosterBlue;
+    }
+    /* End */
+}
+
+@layer utilities {
+  ._container {
+      @apply container mx-auto
+  }
+
+  .text-animation::after {
+    content: "";
+    animation: change-text 10s ease-in-out 0s infinite;
+  }
+
+  @keyframes change-text {
+      0% {
+        content: "Tutorial Hosting"
+      }
+
+      25% {
+        content: "Tutorial Website"
+      }
+
+      50% {
+        content: "Digital Marketing"
+      }
+
+      75% {
+        content: "Tutorial Web Development"
+      }
+
+      100% {
+        content: "Tutorial Design Website"
+      }
+  }
+
+  .show {
+      @apply border-l-2 border-l-primary-hosterBlue px-6 mt-6 ml-3 space-y-3;
+  }
+
+  .hide {
+      @apply hidden;
+  }
+}
+

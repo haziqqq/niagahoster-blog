@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niagahoster Blog</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="bg-linear fixed top-0 left-0 right-0 py-5 z-50 shadow-md">
+        <div class="flex flex-wrap justify-between items-center mx-auto px-2.5 lg:px-10">
+            <a href="index.html" class="flex items-center">
+                <img src="./assets/img/logo.png" class="w-32 lg:w-40" alt="Flowbite Logo">
+            </a>
+            <div class="flex md:order-2">
+                <button type="button"
+                    class="btn-secondary border-btn-neutralState border focus:ring-4 focus:outline-none focus:ring-blue-300 mr-3 md:mr-0">Login
+                </button>
+                <button data-collapse-toggle="mobile-menu-4" type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu-4" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-4">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-10 md:mt-0 md:text-sm md:font-semibold">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white text-sub-4 bg-blue-700 rounded md:bg-transparent md:text-white md:p-0"
+                            aria-current="page">Hosting</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">VPS</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Domain</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Website</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Kemitraan</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Wawasan</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Acara</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <nav class="bg-primary-darkBlue">
+        <ul class="py-3 text-white hidden lg:flex justify-center mt-[4.95rem] space-x-10">
+            <div class="group inline-block relative">
+                <button class="font-semibold rounded inline-flex items-center">
+                    <span class="mr-1 text-sub-4">Tutorial</span>
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </button>
+                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                    <li class="">
+                        <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#">One</a>
+                    </li>
+                    <li class="">
+                        <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
+                    </li>
+                    <li class="">
+                        <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#">Three
+                            is the magic number</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="group inline-block relative">
+                <button class="font-semibold rounded inline-flex items-center">
+                    <span class="mr-1">Digital Marketing</span>
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </button>
+                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                    <li class="">
+                        <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#">One</a>
+                    </li>
+                    <li class="">
+                        <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
+                    </li>
+                    <li class="">
+                        <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#">Three
+                            is the magic number</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="group inline-block relative">
+                <button class="font-semibold rounded inline-flex items-center">
+                    <span class="mr-1">Web Development & Design</span>
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </button>
+                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                    <li class="">
+                        <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#">One</a>
+                    </li>
+                    <li class="">
+                        <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
+                    </li>
+                    <li class="">
+                        <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#">Three
+                            is the magic number</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="group inline-block relative">
+                <button class="font-semibold rounded inline-flex items-center">
+                    <span class="mr-1">Insight Bisnis</span>
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </button>
+                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                    <li class="">
+                        <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#">One</a>
+                    </li>
+                    <li class="">
+                        <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
+                    </li>
+                    <li class="">
+                        <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#">Three
+                            is the magic number</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="group inline-block relative">
+                <button class="font-semibold rounded inline-flex items-center">
+                    <span class="mr-1">News & Updates</span>
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </button>
+                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                    <li class="">
+                        <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#">One</a>
+                    </li>
+                    <li class="">
+                        <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
+                    </li>
+                    <li class="">
+                        <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#">Three
+                            is the magic number</a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </nav>
+    <!-- End Section -->
+
+    <!-- Main Section -->
+    <main class="_container">
+        <div class="grid grid-cols-12 gap-x-[1.875rem]">
+            <div class="col-span-3 pt-12 space-y-6">
+                <!-- Content -->
+                <div class="space-y-4">
+                    <!-- Breadcrumb -->
+                    <nav class="flex" aria-label="Breadcrumb">
+                        <ol class="inline-flex items-center space-x-1 md:space-x-1.5">
+                            <li class="inline-flex items-center">
+                                <a href="#" class="inline-flex items-center text-caption-2 text-primary-hosterBlue">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.0402 11.29L10.3802 5.64004C10.2873 5.54631 10.1767 5.47191 10.0548 5.42115C9.93294 5.37038 9.80224 5.34424 9.67023 5.34424C9.53821 5.34424 9.40751 5.37038 9.28565 5.42115C9.16379 5.47191 9.05319 5.54631 8.96023 5.64004C8.77398 5.8274 8.66943 6.08085 8.66943 6.34504C8.66943 6.60922 8.77398 6.86267 8.96023 7.05004L13.9102 12.05L8.96023 17C8.77398 17.1874 8.66943 17.4409 8.66943 17.705C8.66943 17.9692 8.77398 18.2227 8.96023 18.41C9.05284 18.5045 9.16329 18.5797 9.28516 18.6312C9.40704 18.6827 9.53792 18.7095 9.67023 18.71C9.80253 18.7095 9.93342 18.6827 10.0553 18.6312C10.1772 18.5797 10.2876 18.5045 10.3802 18.41L16.0402 12.76C16.1417 12.6664 16.2227 12.5527 16.2781 12.4262C16.3336 12.2997 16.3622 12.1631 16.3622 12.025C16.3622 11.8869 16.3336 11.7503 16.2781 11.6238C16.2227 11.4973 16.1417 11.3837 16.0402 11.29V11.29Z"
+                                            fill="#29384E" />
+                                    </svg>
+                                    <a href="#" class="ml-1 text-caption-2 text-primary-hosterBlue md:ml-2">Tutorial</a>
+                                </div>
+                            </li>
+                            <li aria-current="page">
+                                <div class="flex items-center">
+                                    <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.0402 11.29L10.3802 5.64004C10.2873 5.54631 10.1767 5.47191 10.0548 5.42115C9.93294 5.37038 9.80224 5.34424 9.67023 5.34424C9.53821 5.34424 9.40751 5.37038 9.28565 5.42115C9.16379 5.47191 9.05319 5.54631 8.96023 5.64004C8.77398 5.8274 8.66943 6.08085 8.66943 6.34504C8.66943 6.60922 8.77398 6.86267 8.96023 7.05004L13.9102 12.05L8.96023 17C8.77398 17.1874 8.66943 17.4409 8.66943 17.705C8.66943 17.9692 8.77398 18.2227 8.96023 18.41C9.05284 18.5045 9.16329 18.5797 9.28516 18.6312C9.40704 18.6827 9.53792 18.7095 9.67023 18.71C9.80253 18.7095 9.93342 18.6827 10.0553 18.6312C10.1772 18.5797 10.2876 18.5045 10.3802 18.41L16.0402 12.76C16.1417 12.6664 16.2227 12.5527 16.2781 12.4262C16.3336 12.2997 16.3622 12.1631 16.3622 12.025C16.3622 11.8869 16.3336 11.7503 16.2781 11.6238C16.2227 11.4973 16.1417 11.3837 16.0402 11.29V11.29Z"
+                                            fill="#29384E" />
+                                    </svg>
+                                    <a href="#" class="ml-1 text-caption-2 text-primary-hosterBlue md:ml-2">Hosting</a>
+                                </div>
+                            </li>
+                        </ol>
+                    </nav>
+                    <!-- End  -->
+
+                    <!-- Title -->
+                    <h6 class="text-h6">4+ Cara Mudah Cek IP Hosting Website</h6>
+                    <!-- End Title -->
+
+                    <!-- Profile -->
+                    <div class="flex items-center space-x-3">
+                        <img src="./assets/img/mini-profile.png" class="w-6" alt="">
+                        <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                    </div>
+                    <!-- End -->
+
+                    <!-- Tag -->
+                    <div class="flex items-center gap-x-4">
+                        <span class="text-body-5 text-textColor-primary">
+                            28 Dec 2021
+                        </span>
+                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#29384E" />
+                        </svg>
+                        <span class="text-body-5 text-textColor-primary">5 min read</span>
+                    </div>
+                    <!-- End Tag -->
+                </div>
+                <!-- End Content -->
+
+                <hr class="w-[13.75rem] border-other-divider">
+
+                <!-- Action Buttons -->
+                <div class="flex space-x-6">
+                    <div class="flex space-x-3 items-center">
+                        <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.5 21H18.5C19.33 21 20.04 20.5 20.34 19.78L23.36 12.73C23.45 12.5 23.5 12.26 23.5 12V10C23.5 8.9 22.6 8 21.5 8H15.19L16.14 3.43L16.17 3.11C16.17 2.7 16 2.32 15.73 2.05L14.67 1L8.08 7.59C7.72 7.95 7.5 8.45 7.5 9V19C7.5 20.1 8.4 21 9.5 21ZM9.5 9L13.84 4.66L12.5 10H21.5V12L18.5 19H9.5V9ZM1.5 9H5.5V21H1.5V9Z"
+                                fill="#546071" />
+                        </svg>
+                        <span class="text-sub-6 font-semibold text-textColor-secondary">111</span>
+                    </div>
+                    <div class="flex space-x-3 items-center">
+                        <button data-modal-toggle="top-right-modal">
+                            <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9999 9H6.99987C6.73465 9 6.4803 9.10536 6.29276 9.29289C6.10522 9.48043 5.99987 9.73478 5.99987 10C5.99987 10.2652 6.10522 10.5196 6.29276 10.7071C6.4803 10.8946 6.73465 11 6.99987 11H16.9999C17.2651 11 17.5194 10.8946 17.707 10.7071C17.8945 10.5196 17.9999 10.2652 17.9999 10C17.9999 9.73478 17.8945 9.48043 17.707 9.29289C17.5194 9.10536 17.2651 9 16.9999 9ZM12.9999 13H6.99987C6.73465 13 6.4803 13.1054 6.29276 13.2929C6.10522 13.4804 5.99987 13.7348 5.99987 14C5.99987 14.2652 6.10522 14.5196 6.29276 14.7071C6.4803 14.8946 6.73465 15 6.99987 15H12.9999C13.2651 15 13.5194 14.8946 13.707 14.7071C13.8945 14.5196 13.9999 14.2652 13.9999 14C13.9999 13.7348 13.8945 13.4804 13.707 13.2929C13.5194 13.1054 13.2651 13 12.9999 13ZM11.9999 2C10.6866 2 9.38629 2.25866 8.17303 2.7612C6.95978 3.26375 5.85738 4.00035 4.9288 4.92893C3.05343 6.8043 1.99987 9.34784 1.99987 12C1.99112 14.3091 2.79066 16.5485 4.25987 18.33L2.25987 20.33C2.12111 20.4706 2.02711 20.6492 1.98974 20.8432C1.95236 21.0372 1.97329 21.2379 2.04987 21.42C2.13292 21.5999 2.26757 21.7511 2.43671 21.8544C2.60586 21.9577 2.80187 22.0083 2.99987 22H11.9999C14.652 22 17.1956 20.9464 19.0709 19.0711C20.9463 17.1957 21.9999 14.6522 21.9999 12C21.9999 9.34784 20.9463 6.8043 19.0709 4.92893C17.1956 3.05357 14.652 2 11.9999 2ZM11.9999 20H5.40987L6.33987 19.07C6.52612 18.8826 6.63066 18.6292 6.63066 18.365C6.63066 18.1008 6.52612 17.8474 6.33987 17.66C5.03045 16.352 4.21504 14.6305 4.03256 12.7888C3.85007 10.947 4.31181 9.09901 5.33909 7.55952C6.36638 6.02004 7.89566 4.88436 9.66638 4.34597C11.4371 3.80759 13.3397 3.8998 15.0501 4.60691C16.7604 5.31402 18.1727 6.59227 19.0463 8.22389C19.9199 9.85551 20.2007 11.7395 19.841 13.555C19.4813 15.3705 18.5032 17.005 17.0734 18.1802C15.6436 19.3554 13.8506 19.9985 11.9999 20Z"
+                                    fill="#546071" />
+                            </svg>
+                        </button>
+                        <span class="text-sub-6 font-semibold text-textColor-secondary">4</span>
+                    </div>
+                    <div class="flex space-x-3 items-center">
+                        <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.5 14.0001C17.9092 14.004 17.3266 14.1388 16.794 14.3947C16.2615 14.6506 15.7922 15.0213 15.42 15.4801L10.32 13.1301C10.5598 12.3959 10.5598 11.6044 10.32 10.8701L15.42 8.52011C16.0216 9.24608 16.8604 9.73619 17.7882 9.90395C18.716 10.0717 19.6732 9.90634 20.491 9.43702C21.3087 8.96769 21.9344 8.22459 22.2576 7.33886C22.5808 6.45312 22.5807 5.4817 22.2573 4.59602C21.934 3.71035 21.3082 2.96736 20.4903 2.49818C19.6725 2.02901 18.7152 1.86381 17.7875 2.03174C16.8597 2.19967 16.021 2.68993 15.4196 3.41601C14.8181 4.14208 14.4924 5.05729 14.5 6.00011C14.503 6.23835 14.5265 6.47588 14.57 6.71011L9.29003 9.14011C8.72711 8.58969 8.01427 8.21763 7.24083 8.07054C6.46739 7.92345 5.66775 8.00788 4.94208 8.31325C4.21641 8.61861 3.59699 9.13133 3.16143 9.78718C2.72587 10.443 2.49353 11.2128 2.49353 12.0001C2.49353 12.7874 2.72587 13.5572 3.16143 14.2131C3.59699 14.8689 4.21641 15.3816 4.94208 15.687C5.66775 15.9923 6.46739 16.0768 7.24083 15.9297C8.01427 15.7826 8.72711 15.4105 9.29003 14.8601L14.57 17.2901C14.5265 17.5243 14.503 17.7619 14.5 18.0001C14.5 18.7912 14.7346 19.5646 15.1742 20.2224C15.6137 20.8802 16.2384 21.3929 16.9693 21.6956C17.7002 21.9984 18.5045 22.0776 19.2804 21.9233C20.0563 21.7689 20.769 21.388 21.3285 20.8285C21.8879 20.2691 22.2688 19.5564 22.4232 18.7805C22.5775 18.0046 22.4983 17.2003 22.1955 16.4694C21.8928 15.7385 21.3801 15.1138 20.7223 14.6742C20.0645 14.2347 19.2912 14.0001 18.5 14.0001ZM18.5 4.00011C18.8956 4.00011 19.2823 4.11741 19.6112 4.33718C19.9401 4.55694 20.1964 4.8693 20.3478 5.23475C20.4992 5.6002 20.5388 6.00233 20.4616 6.3903C20.3844 6.77826 20.1939 7.13462 19.9142 7.41433C19.6345 7.69403 19.2782 7.88451 18.8902 7.96169C18.5022 8.03886 18.1001 7.99925 17.7347 7.84787C17.3692 7.6965 17.0569 7.44015 16.8371 7.11125C16.6173 6.78236 16.5 6.39568 16.5 6.00011C16.5 5.46968 16.7107 4.96097 17.0858 4.5859C17.4609 4.21083 17.9696 4.00011 18.5 4.00011ZM6.50003 14.0001C6.10447 14.0001 5.71779 13.8828 5.38889 13.6631C5.05999 13.4433 4.80364 13.1309 4.65227 12.7655C4.50089 12.4 4.46129 11.9979 4.53846 11.6099C4.61563 11.222 4.80611 10.8656 5.08581 10.5859C5.36552 10.3062 5.72189 10.1157 6.10985 10.0385C6.49781 9.96137 6.89994 10.001 7.2654 10.1524C7.63085 10.3037 7.9432 10.5601 8.16297 10.889C8.38273 11.2179 8.50003 11.6046 8.50003 12.0001C8.50003 12.5305 8.28931 13.0393 7.91424 13.4143C7.53917 13.7894 7.03046 14.0001 6.50003 14.0001ZM18.5 20.0001C18.1045 20.0001 17.7178 19.8828 17.3889 19.6631C17.06 19.4433 16.8036 19.1309 16.6523 18.7655C16.5009 18.4 16.4613 17.9979 16.5385 17.6099C16.6156 17.222 16.8061 16.8656 17.0858 16.5859C17.3655 16.3062 17.7219 16.1157 18.1098 16.0385C18.4978 15.9614 18.8999 16.001 19.2654 16.1524C19.6308 16.3037 19.9432 16.5601 20.163 16.889C20.3827 17.2179 20.5 17.6046 20.5 18.0001C20.5 18.5305 20.2893 19.0393 19.9142 19.4143C19.5392 19.7894 19.0305 20.0001 18.5 20.0001Z"
+                                fill="#546071" />
+                        </svg>
+                        <span class="text-sub-6 font-semibold text-textColor-secondary">Share</span>
+                    </div>
+                </div>
+                <!-- End -->
+
+            </div>
+
+            <div class="col-start-4 col-span-7 pt-[3.375rem]">
+                <!-- Breadcrumb -->
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-1.5">
+                        <li class="inline-flex items-center">
+                            <a href="#" class="inline-flex items-center text-caption-2 text-primary-hosterBlue">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0402 11.29L10.3802 5.64004C10.2873 5.54631 10.1767 5.47191 10.0548 5.42115C9.93294 5.37038 9.80224 5.34424 9.67023 5.34424C9.53821 5.34424 9.40751 5.37038 9.28565 5.42115C9.16379 5.47191 9.05319 5.54631 8.96023 5.64004C8.77398 5.8274 8.66943 6.08085 8.66943 6.34504C8.66943 6.60922 8.77398 6.86267 8.96023 7.05004L13.9102 12.05L8.96023 17C8.77398 17.1874 8.66943 17.4409 8.66943 17.705C8.66943 17.9692 8.77398 18.2227 8.96023 18.41C9.05284 18.5045 9.16329 18.5797 9.28516 18.6312C9.40704 18.6827 9.53792 18.7095 9.67023 18.71C9.80253 18.7095 9.93342 18.6827 10.0553 18.6312C10.1772 18.5797 10.2876 18.5045 10.3802 18.41L16.0402 12.76C16.1417 12.6664 16.2227 12.5527 16.2781 12.4262C16.3336 12.2997 16.3622 12.1631 16.3622 12.025C16.3622 11.8869 16.3336 11.7503 16.2781 11.6238C16.2227 11.4973 16.1417 11.3837 16.0402 11.29V11.29Z"
+                                        fill="#29384E" />
+                                </svg>
+                                <a href="#" class="ml-1 text-caption-2 text-primary-hosterBlue md:ml-2">Tutorial</a>
+                            </div>
+                        </li>
+                        <li aria-current="page">
+                            <div class="flex items-center">
+                                <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0402 11.29L10.3802 5.64004C10.2873 5.54631 10.1767 5.47191 10.0548 5.42115C9.93294 5.37038 9.80224 5.34424 9.67023 5.34424C9.53821 5.34424 9.40751 5.37038 9.28565 5.42115C9.16379 5.47191 9.05319 5.54631 8.96023 5.64004C8.77398 5.8274 8.66943 6.08085 8.66943 6.34504C8.66943 6.60922 8.77398 6.86267 8.96023 7.05004L13.9102 12.05L8.96023 17C8.77398 17.1874 8.66943 17.4409 8.66943 17.705C8.66943 17.9692 8.77398 18.2227 8.96023 18.41C9.05284 18.5045 9.16329 18.5797 9.28516 18.6312C9.40704 18.6827 9.53792 18.7095 9.67023 18.71C9.80253 18.7095 9.93342 18.6827 10.0553 18.6312C10.1772 18.5797 10.2876 18.5045 10.3802 18.41L16.0402 12.76C16.1417 12.6664 16.2227 12.5527 16.2781 12.4262C16.3336 12.2997 16.3622 12.1631 16.3622 12.025C16.3622 11.8869 16.3336 11.7503 16.2781 11.6238C16.2227 11.4973 16.1417 11.3837 16.0402 11.29V11.29Z"
+                                        fill="#29384E" />
+                                </svg>
+                                <a href="#" class="ml-1 text-caption-2 text-primary-hosterBlue md:ml-2">Hosting</a>
+                            </div>
+                        </li>
+                        <li aria-current="page">
+                            <div class="flex items-center">
+                                <svg width="14" height="14" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0402 11.29L10.3802 5.64004C10.2873 5.54631 10.1767 5.47191 10.0548 5.42115C9.93294 5.37038 9.80224 5.34424 9.67023 5.34424C9.53821 5.34424 9.40751 5.37038 9.28565 5.42115C9.16379 5.47191 9.05319 5.54631 8.96023 5.64004C8.77398 5.8274 8.66943 6.08085 8.66943 6.34504C8.66943 6.60922 8.77398 6.86267 8.96023 7.05004L13.9102 12.05L8.96023 17C8.77398 17.1874 8.66943 17.4409 8.66943 17.705C8.66943 17.9692 8.77398 18.2227 8.96023 18.41C9.05284 18.5045 9.16329 18.5797 9.28516 18.6312C9.40704 18.6827 9.53792 18.7095 9.67023 18.71C9.80253 18.7095 9.93342 18.6827 10.0553 18.6312C10.1772 18.5797 10.2876 18.5045 10.3802 18.41L16.0402 12.76C16.1417 12.6664 16.2227 12.5527 16.2781 12.4262C16.3336 12.2997 16.3622 12.1631 16.3622 12.025C16.3622 11.8869 16.3336 11.7503 16.2781 11.6238C16.2227 11.4973 16.1417 11.3837 16.0402 11.29V11.29Z"
+                                        fill="#29384E" />
+                                </svg>
+                                <span class="ml-1 text-caption-2 text-textColor-secondary md:ml-2">4+ Cara Mudah
+                                    Cek IP Hosting Website</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+                <!-- End -->
+
+                <!-- Header -->
+                <div class="space-y-4 py-9">
+                    <h1 class="text-h2 text-textColor-primary">4+ Cara Mudah Cek IP Hosting Website</h1>
+                    <div class="grid grid-cols-7">
+                        <div class="col-span-4">
+                            <!-- Profile -->
+                            <div class="flex items-center space-x-3">
+                                <img src="./assets/img/mini-profile.png" class="w-6" alt="">
+                                <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#29384E" />
+                                </svg>
+                                <span class="text-body-5 text-textColor-primary">28 Dec 2021</span>
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#29384E" />
+                                </svg>
+                                <span class="text-body-5 text-textColor-primary">5 min read</span>
+                            </div>
+                            <!-- End -->
+                        </div>
+
+                        <div class="col-span-3 flex justify-end">
+                            <!-- Action Buttons -->
+                            <div class="flex space-x-6">
+                                <div class="flex space-x-3 items-center">
+                                    <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.5 21H18.5C19.33 21 20.04 20.5 20.34 19.78L23.36 12.73C23.45 12.5 23.5 12.26 23.5 12V10C23.5 8.9 22.6 8 21.5 8H15.19L16.14 3.43L16.17 3.11C16.17 2.7 16 2.32 15.73 2.05L14.67 1L8.08 7.59C7.72 7.95 7.5 8.45 7.5 9V19C7.5 20.1 8.4 21 9.5 21ZM9.5 9L13.84 4.66L12.5 10H21.5V12L18.5 19H9.5V9ZM1.5 9H5.5V21H1.5V9Z"
+                                            fill="#546071" />
+                                    </svg>
+                                    <span class="text-sub-6 font-semibold text-textColor-secondary">111</span>
+                                </div>
+                                <div class="flex space-x-3 items-center">
+                                    <button data-modal-toggle="top-right-modal">
+                                        <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.9999 9H6.99987C6.73465 9 6.4803 9.10536 6.29276 9.29289C6.10522 9.48043 5.99987 9.73478 5.99987 10C5.99987 10.2652 6.10522 10.5196 6.29276 10.7071C6.4803 10.8946 6.73465 11 6.99987 11H16.9999C17.2651 11 17.5194 10.8946 17.707 10.7071C17.8945 10.5196 17.9999 10.2652 17.9999 10C17.9999 9.73478 17.8945 9.48043 17.707 9.29289C17.5194 9.10536 17.2651 9 16.9999 9ZM12.9999 13H6.99987C6.73465 13 6.4803 13.1054 6.29276 13.2929C6.10522 13.4804 5.99987 13.7348 5.99987 14C5.99987 14.2652 6.10522 14.5196 6.29276 14.7071C6.4803 14.8946 6.73465 15 6.99987 15H12.9999C13.2651 15 13.5194 14.8946 13.707 14.7071C13.8945 14.5196 13.9999 14.2652 13.9999 14C13.9999 13.7348 13.8945 13.4804 13.707 13.2929C13.5194 13.1054 13.2651 13 12.9999 13ZM11.9999 2C10.6866 2 9.38629 2.25866 8.17303 2.7612C6.95978 3.26375 5.85738 4.00035 4.9288 4.92893C3.05343 6.8043 1.99987 9.34784 1.99987 12C1.99112 14.3091 2.79066 16.5485 4.25987 18.33L2.25987 20.33C2.12111 20.4706 2.02711 20.6492 1.98974 20.8432C1.95236 21.0372 1.97329 21.2379 2.04987 21.42C2.13292 21.5999 2.26757 21.7511 2.43671 21.8544C2.60586 21.9577 2.80187 22.0083 2.99987 22H11.9999C14.652 22 17.1956 20.9464 19.0709 19.0711C20.9463 17.1957 21.9999 14.6522 21.9999 12C21.9999 9.34784 20.9463 6.8043 19.0709 4.92893C17.1956 3.05357 14.652 2 11.9999 2ZM11.9999 20H5.40987L6.33987 19.07C6.52612 18.8826 6.63066 18.6292 6.63066 18.365C6.63066 18.1008 6.52612 17.8474 6.33987 17.66C5.03045 16.352 4.21504 14.6305 4.03256 12.7888C3.85007 10.947 4.31181 9.09901 5.33909 7.55952C6.36638 6.02004 7.89566 4.88436 9.66638 4.34597C11.4371 3.80759 13.3397 3.8998 15.0501 4.60691C16.7604 5.31402 18.1727 6.59227 19.0463 8.22389C19.9199 9.85551 20.2007 11.7395 19.841 13.555C19.4813 15.3705 18.5032 17.005 17.0734 18.1802C15.6436 19.3554 13.8506 19.9985 11.9999 20Z"
+                                                fill="#546071" />
+                                        </svg>
+                                    </button>
+                                    <span class="text-sub-6 font-semibold text-textColor-secondary">4</span>
+                                </div>
+                                <div class="flex space-x-3 items-center">
+                                    <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.5 14.0001C17.9092 14.004 17.3266 14.1388 16.794 14.3947C16.2615 14.6506 15.7922 15.0213 15.42 15.4801L10.32 13.1301C10.5598 12.3959 10.5598 11.6044 10.32 10.8701L15.42 8.52011C16.0216 9.24608 16.8604 9.73619 17.7882 9.90395C18.716 10.0717 19.6732 9.90634 20.491 9.43702C21.3087 8.96769 21.9344 8.22459 22.2576 7.33886C22.5808 6.45312 22.5807 5.4817 22.2573 4.59602C21.934 3.71035 21.3082 2.96736 20.4903 2.49818C19.6725 2.02901 18.7152 1.86381 17.7875 2.03174C16.8597 2.19967 16.021 2.68993 15.4196 3.41601C14.8181 4.14208 14.4924 5.05729 14.5 6.00011C14.503 6.23835 14.5265 6.47588 14.57 6.71011L9.29003 9.14011C8.72711 8.58969 8.01427 8.21763 7.24083 8.07054C6.46739 7.92345 5.66775 8.00788 4.94208 8.31325C4.21641 8.61861 3.59699 9.13133 3.16143 9.78718C2.72587 10.443 2.49353 11.2128 2.49353 12.0001C2.49353 12.7874 2.72587 13.5572 3.16143 14.2131C3.59699 14.8689 4.21641 15.3816 4.94208 15.687C5.66775 15.9923 6.46739 16.0768 7.24083 15.9297C8.01427 15.7826 8.72711 15.4105 9.29003 14.8601L14.57 17.2901C14.5265 17.5243 14.503 17.7619 14.5 18.0001C14.5 18.7912 14.7346 19.5646 15.1742 20.2224C15.6137 20.8802 16.2384 21.3929 16.9693 21.6956C17.7002 21.9984 18.5045 22.0776 19.2804 21.9233C20.0563 21.7689 20.769 21.388 21.3285 20.8285C21.8879 20.2691 22.2688 19.5564 22.4232 18.7805C22.5775 18.0046 22.4983 17.2003 22.1955 16.4694C21.8928 15.7385 21.3801 15.1138 20.7223 14.6742C20.0645 14.2347 19.2912 14.0001 18.5 14.0001ZM18.5 4.00011C18.8956 4.00011 19.2823 4.11741 19.6112 4.33718C19.9401 4.55694 20.1964 4.8693 20.3478 5.23475C20.4992 5.6002 20.5388 6.00233 20.4616 6.3903C20.3844 6.77826 20.1939 7.13462 19.9142 7.41433C19.6345 7.69403 19.2782 7.88451 18.8902 7.96169C18.5022 8.03886 18.1001 7.99925 17.7347 7.84787C17.3692 7.6965 17.0569 7.44015 16.8371 7.11125C16.6173 6.78236 16.5 6.39568 16.5 6.00011C16.5 5.46968 16.7107 4.96097 17.0858 4.5859C17.4609 4.21083 17.9696 4.00011 18.5 4.00011ZM6.50003 14.0001C6.10447 14.0001 5.71779 13.8828 5.38889 13.6631C5.05999 13.4433 4.80364 13.1309 4.65227 12.7655C4.50089 12.4 4.46129 11.9979 4.53846 11.6099C4.61563 11.222 4.80611 10.8656 5.08581 10.5859C5.36552 10.3062 5.72189 10.1157 6.10985 10.0385C6.49781 9.96137 6.89994 10.001 7.2654 10.1524C7.63085 10.3037 7.9432 10.5601 8.16297 10.889C8.38273 11.2179 8.50003 11.6046 8.50003 12.0001C8.50003 12.5305 8.28931 13.0393 7.91424 13.4143C7.53917 13.7894 7.03046 14.0001 6.50003 14.0001ZM18.5 20.0001C18.1045 20.0001 17.7178 19.8828 17.3889 19.6631C17.06 19.4433 16.8036 19.1309 16.6523 18.7655C16.5009 18.4 16.4613 17.9979 16.5385 17.6099C16.6156 17.222 16.8061 16.8656 17.0858 16.5859C17.3655 16.3062 17.7219 16.1157 18.1098 16.0385C18.4978 15.9614 18.8999 16.001 19.2654 16.1524C19.6308 16.3037 19.9432 16.5601 20.163 16.889C20.3827 17.2179 20.5 17.6046 20.5 18.0001C20.5 18.5305 20.2893 19.0393 19.9142 19.4143C19.5392 19.7894 19.0305 20.0001 18.5 20.0001Z"
+                                            fill="#546071" />
+                                    </svg>
+                                    <span class="text-sub-6 font-semibold text-textColor-secondary">Share</span>
+                                </div>
+                            </div>
+                            <!-- End -->
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Header -->
+
+                <!-- Article Image -->
+                <img src="./assets/img/detail-artikel.png" class="w-max rounded-[0.625rem]" alt="">
+                <!-- End -->
+
+                <!-- Paragraph -->
+                <article class="space-y-9 mt-9">
+                    <p class="text-body-2 text-textColor-primary">Anda ingin tahu cara cek IP Hosting? Selamat, Anda
+                        Berada di halaman yang
+                        tepat!</p>
+                    <p class="text-body-2 text-textColor-primary">IP Hosting adalah barisan angka sebagai identitas
+                        unik
+                        dari suatu hosting
+                        website.
+                        Dengan IP
+                        tersebut, website Anda dapat dikenali dan diakses melalui jaringan internet.</p>
+                    <p class="text-body-2 text-textColor-primary">Saat Anda mengakses website, Anda memang tidak
+                        bisa
+                        melihat IP secara
+                        langsung. Alasannya, IP
+                        tersebut sudah diwakili oleh sebuah domain agar lebih mudah diingat.</p>
+                    <p class="text-body-2 text-textColor-primary">Kalau begitu, bagaimana cara mengetahui hosting IP
+                        suatu website? Yuk, simak
+                        panduan lengkap
+                        cara cek IP web hosting di bawah ini!</p>
+
+                    <!-- Daftar Isi -->
+                    <div id="accordion-collapse" data-accordion="collapse">
+                        <h2 class="text-h6">
+                            <button type="button"
+                                class="flex bg-white justify-between items-center p-8 w-full font-bold rounded-t-[0.625rem] text-textColor-primary border"
+                                data-accordion-target=" #accordion-collapse-body-2">
+                                <span>Daftar Isi</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-2" class="hidden">
+                            <div class="p-8 bg-white border border-t-0 border-gray-200 rounded-b-[0.625rem] space-y-3">
+                                <p class="text-body-5 font-bold text-primary-hosterBlue">Cara Cek IP Hosting</p>
+                                <p class="text-body-5 font-bold text-primary-hosterBlue pl-4">Melihat IP Hosting
+                                    pada
+                                    email informasi akun hosting</p>
+                                <p class="text-body-5 text-textColor-primary pl-4">Melihat IP Hosting melalui
+                                    Member Area Niagahoster</p>
+                                <p class="text-body-5 text-textColor-primary pl-4">Melihat IP Hosting melalui
+                                    cPanel</p>
+                                <p class="text-body-5 text-textColor-primary pl-4">Melihat IP menggunakan CMD</p>
+                                <p class="text-body-5 text-textColor-primary pl-4">Melihat IP dengan web-based tools
+                                </p>
+                                <p class="text-body-5 font-semibold text-textColor-primary">Kesimpulan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End -->
+
+                    <h4 class="text-h4 text-textColor-primary">Cara Cek IP Hosting</h4>
+
+                    <div class="text-body-2 text-textColor-primary">
+                        <p>Anda dapat melakukan cek IP hosting dengan
+                            berbagai
+                            cara, diantaranya adalah:</p>
+                        <li class="font-bold">Melihat IP Hosting pada Email Informasi Akun Hosting</li>
+                        <li class="font-bold">Melihat IP Hosting Melalui Member Area Niagahoster</li>
+                        <li class="font-bold">Melihat IP Hosting Melalui cPanel</li>
+                        <li class="font-bold">Mengecek IP menggunakan CMD</li>
+                        <li class="font-bold">Mengecek IP dengan Web-based Tools</li>
+                        <p>Nah, berikut ini penjelasan lengkapnya:</p>
+                    </div>
+
+                    <h4 class="text-h4 text-textColor-primary">1.Melihat IP Hosting pada Email Informasi Akun
+                        Hosting
+                    </h4>
+
+                    <p class="text-body-2 text-textColor-primary">Ketika Anda membeli layanan hosting, pihak
+                        penyedia
+                        hosting akan mengirimkan email berupa informasi detail akun hosting Anda. Pada email ini,
+                        Anda
+                        bisa cek IP di bagian informasi Akun seperti ini:</p>
+
+                    <h4 class="text-h4 text-textColor-primary">Kesimpulan</h4>
+
+                    <p class="text-body-2 text-textColor-primary">Nah, itu dia beberapa cara yang bisa Anda coba
+                        untuk
+                        mengecek hosting IP website. Mulai dari melihat IP pada email yang dikirimkan ketika Anda
+                        berhasil melakukan order hosting hingga cek IP hosting dengan bantuan aplikasi website.</p>
+
+                    <p class="text-body-2 text-textColor-primary">IP hosting merupakan deretan angka yang tentu
+                        sulit
+                        untuk diingat. Itulah kenapa penggunaan domain website bisa solusi terbaik demi kemudahan.
+                        Namun, pastikan nama domain terbaik yang digunakan, ya.</p>
+
+                    <p class="text-body-2 text-textColor-primary">Untungnya, Anda bisa membeli domain unik dengan
+                        mudah
+                        dari penyedia hosting di Indonesia seperti Niagahoster.</p>
+
+                    <p class="text-body-2 text-textColor-primary">Bahkan, di Niagahoster, Anda bisa mendapatkan
+                        domain
+                        gratis jika berlangganan hosting di hampir semua paket yang ditawarkan dengan durasi
+                        tertentu.
+                    </p>
+
+                    <p class="text-body-2 text-textColor-primary">Tak hanya itu, Anda bisa juga menambahkan banyak
+                        domain pada akun hosting Anda berkat fitur Unlimited Addon Domain. Itu pun masih ditambah
+                        dengan
+                        SSL gratis yang bisa digunakan untuk menjaga keamanan website Anda.</p>
+
+                    <p class="text-body-2 text-textColor-primary">Menariknya, semua layanan tersebut bisa Anda
+                        dapatkan
+                        dengan harga mulai dari Rp21rb/bulan saja. Harga yang cukup murah untuk fitur canggih dan
+                        layanan berkualitas, bukan?</p>
+
+                    <p class="text-body-2 text-textColor-primary">Jadi, tunggu apa lagi? Yuk, dapatkan domain gratis
+                        dengan berlangganan web hosting Niagahoster sekarang!</p>
+
+                    <button class="btn-large btn-secondary">Berlangganan Hosting Niagahoster Sekarang Juga!</button>
+
+                </article>
+                <!-- End Paragraph -->
+            </div>
+        </div>
+    </main>
+    <!-- End Section -->
+
+    <!-- Modal (Article Replies) -->
+    <div id="top-right-modal" data-modal-placement="top-right" tabindex="-1"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 max-h-full justify-end items-start"
+        aria-hidden="true">
+        <div class="relative w-full max-w-[22.188rem] h-screen md:h-auto">
+
+            <div class="relative bg-white shadow dark:bg-gray-700">
+
+                <div class="border-b pt-9 pb-6 px-[1.875rem]">
+                    <div class="flex justify-between items-center mb-6">
+                        <div class="flex items-center space-x-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.9999 9H6.99987C6.73465 9 6.4803 9.10536 6.29276 9.29289C6.10522 9.48043 5.99987 9.73478 5.99987 10C5.99987 10.2652 6.10522 10.5196 6.29276 10.7071C6.4803 10.8946 6.73465 11 6.99987 11H16.9999C17.2651 11 17.5194 10.8946 17.707 10.7071C17.8945 10.5196 17.9999 10.2652 17.9999 10C17.9999 9.73478 17.8945 9.48043 17.707 9.29289C17.5194 9.10536 17.2651 9 16.9999 9ZM12.9999 13H6.99987C6.73465 13 6.4803 13.1054 6.29276 13.2929C6.10522 13.4804 5.99987 13.7348 5.99987 14C5.99987 14.2652 6.10522 14.5196 6.29276 14.7071C6.4803 14.8946 6.73465 15 6.99987 15H12.9999C13.2651 15 13.5194 14.8946 13.707 14.7071C13.8945 14.5196 13.9999 14.2652 13.9999 14C13.9999 13.7348 13.8945 13.4804 13.707 13.2929C13.5194 13.1054 13.2651 13 12.9999 13ZM11.9999 2C10.6866 2 9.38629 2.25866 8.17303 2.7612C6.95978 3.26375 5.85738 4.00035 4.9288 4.92893C3.05343 6.8043 1.99987 9.34784 1.99987 12C1.99112 14.3091 2.79066 16.5485 4.25987 18.33L2.25987 20.33C2.12111 20.4706 2.02711 20.6492 1.98974 20.8432C1.95236 21.0372 1.97329 21.2379 2.04987 21.42C2.13292 21.5999 2.26757 21.7511 2.43671 21.8544C2.60586 21.9577 2.80187 22.0083 2.99987 22H11.9999C14.652 22 17.1956 20.9464 19.0709 19.0711C20.9463 17.1957 21.9999 14.6522 21.9999 12C21.9999 9.34784 20.9463 6.8043 19.0709 4.92893C17.1956 3.05357 14.652 2 11.9999 2ZM11.9999 20H5.40987L6.33987 19.07C6.52612 18.8826 6.63066 18.6292 6.63066 18.365C6.63066 18.1008 6.52612 17.8474 6.33987 17.66C5.03045 16.352 4.21504 14.6305 4.03256 12.7888C3.85007 10.947 4.31181 9.09901 5.33909 7.55952C6.36638 6.02004 7.89566 4.88436 9.66638 4.34597C11.4371 3.80759 13.3397 3.8998 15.0501 4.60691C16.7604 5.31402 18.1727 6.59227 19.0463 8.22389C19.9199 9.85551 20.2007 11.7395 19.841 13.555C19.4813 15.3705 18.5032 17.005 17.0734 18.1802C15.6436 19.3554 13.8506 19.9985 11.9999 20Z"
+                                    fill="#546071" />
+                            </svg>
+                            <h3 class="text-h6 font-bold text-gray-900 dark:text-white">
+                                Balasan
+                            </h3>
+                            <span class="text-h6 font-bold text-primary-hosterBlue">4</span>
+                        </div>
+                        <button type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-toggle="top-right-modal">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <textarea
+                        class="p-[0.875rem] rounded-[0.875rem] border border-other-divider text-body-4 text-textColor-secondary2 focus:ring-primary-hosterBlue focus:border-2 mb-6 w-[18.438rem]"
+                        name="" id="textarea" cols="30" rows="5" placeholder="Apa yang Anda pikirkan?"
+                        onkeyup="isEmpty()"></textarea>
+                    <div class="flex justify-end space-x-3 trigger">
+                        <button id="test" class="btn-small btn-text">Cancel</button>
+                        <button class="btn-small btn-primary">Comment</button>
+                    </div>
+                </div>
+
+                <div class="space-y-6 py-6 px-[1.875rem]">
+
+                    <!-- Replies Card -->
+                    <div class="space-y-3 border-b border-other-divider pb-6">
+                        <div class="flex items-center space-x-3">
+                            <img src="./assets/img/mini-profile-replies.png" class="w-10 h-10 rounded-full" alt="">
+                            <div>
+                                <h6 class="text-sub-4 font-semibold">Adam Muiz</h6>
+                                <span class="text-caption-2 text-textColor-secondary2">29 Hari yang lalu</span>
+                            </div>
+                        </div>
+                        <p class="text-body-4 text-textColor-primary">makasih kak udah berbagi informasi hehe</p>
+                        <div class="space-x-2">
+                            <button>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.5 21H18.5C19.33 21 20.04 20.5 20.34 19.78L23.36 12.73C23.45 12.5 23.5 12.26 23.5 12V10C23.5 8.9 22.6 8 21.5 8H15.19L16.14 3.43L16.17 3.11C16.17 2.7 16 2.32 15.73 2.05L14.67 1L8.08 7.59C7.72 7.95 7.5 8.45 7.5 9V19C7.5 20.1 8.4 21 9.5 21ZM9.5 9L13.84 4.66L12.5 10H21.5V12L18.5 19H9.5V9ZM1.5 9H5.5V21H1.5V9Z"
+                                        fill="#546071" />
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.9999 9.49994H7.4099L8.7099 8.20994C8.8982 8.02164 9.00399 7.76624 9.00399 7.49994C9.00399 7.23364 8.8982 6.97825 8.7099 6.78994C8.52159 6.60164 8.2662 6.49585 7.9999 6.49585C7.73359 6.49585 7.4782 6.60164 7.2899 6.78994L4.2899 9.78994C4.19886 9.88505 4.12749 9.99719 4.0799 10.1199C3.97988 10.3634 3.97988 10.6365 4.0799 10.8799C4.12749 11.0027 4.19886 11.1148 4.2899 11.2099L7.2899 14.2099C7.38286 14.3037 7.49346 14.3781 7.61532 14.4288C7.73718 14.4796 7.86788 14.5057 7.9999 14.5057C8.13191 14.5057 8.26261 14.4796 8.38447 14.4288C8.50633 14.3781 8.61693 14.3037 8.7099 14.2099C8.80363 14.117 8.87802 14.0064 8.92879 13.8845C8.97956 13.7627 9.00569 13.632 9.00569 13.4999C9.00569 13.3679 8.97956 13.2372 8.92879 13.1154C8.87802 12.9935 8.80363 12.8829 8.7099 12.7899L7.4099 11.4999H16.9999C17.2651 11.4999 17.5195 11.6053 17.707 11.7928C17.8945 11.9804 17.9999 12.2347 17.9999 12.4999V16.4999C17.9999 16.7652 18.1053 17.0195 18.2928 17.207C18.4803 17.3946 18.7347 17.4999 18.9999 17.4999C19.2651 17.4999 19.5195 17.3946 19.707 17.207C19.8945 17.0195 19.9999 16.7652 19.9999 16.4999V12.4999C19.9999 11.7043 19.6838 10.9412 19.1212 10.3786C18.5586 9.81601 17.7955 9.49994 16.9999 9.49994Z"
+                                        fill="#546071" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Replies Card -->
+                    <div class="space-y-3 border-b border-other-divider pb-6">
+                        <div class="flex items-center space-x-3">
+                            <img src="./assets/img/mini-profile-replies.png" class="w-10 h-10 rounded-full" alt="">
+                            <div>
+                                <h6 class="text-sub-4 font-semibold">Adam Muiz</h6>
+                                <span class="text-caption-2 text-textColor-secondary2">29 Hari yang lalu</span>
+                            </div>
+                        </div>
+
+                        <p class="text-body-4 text-textColor-primary w-fit">Lagi
+                            coba
+                            host-tracker
+                            trial
+                            30 day,
+                            bisa
+                            mantau
+                            uptime website, cukup membantu. Sebenarnya kalau mantau juga bisa pakai Jetpack, cuma
+                            karena
+                            berhubung pluginnya berat jadi cari alternatif lain buat pantau.</p>
+                        <div class="space-x-2">
+                            <button>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.5 21H18.5C19.33 21 20.04 20.5 20.34 19.78L23.36 12.73C23.45 12.5 23.5 12.26 23.5 12V10C23.5 8.9 22.6 8 21.5 8H15.19L16.14 3.43L16.17 3.11C16.17 2.7 16 2.32 15.73 2.05L14.67 1L8.08 7.59C7.72 7.95 7.5 8.45 7.5 9V19C7.5 20.1 8.4 21 9.5 21ZM9.5 9L13.84 4.66L12.5 10H21.5V12L18.5 19H9.5V9ZM1.5 9H5.5V21H1.5V9Z"
+                                        fill="#546071" />
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.9999 9.49994H7.4099L8.7099 8.20994C8.8982 8.02164 9.00399 7.76624 9.00399 7.49994C9.00399 7.23364 8.8982 6.97825 8.7099 6.78994C8.52159 6.60164 8.2662 6.49585 7.9999 6.49585C7.73359 6.49585 7.4782 6.60164 7.2899 6.78994L4.2899 9.78994C4.19886 9.88505 4.12749 9.99719 4.0799 10.1199C3.97988 10.3634 3.97988 10.6365 4.0799 10.8799C4.12749 11.0027 4.19886 11.1148 4.2899 11.2099L7.2899 14.2099C7.38286 14.3037 7.49346 14.3781 7.61532 14.4288C7.73718 14.4796 7.86788 14.5057 7.9999 14.5057C8.13191 14.5057 8.26261 14.4796 8.38447 14.4288C8.50633 14.3781 8.61693 14.3037 8.7099 14.2099C8.80363 14.117 8.87802 14.0064 8.92879 13.8845C8.97956 13.7627 9.00569 13.632 9.00569 13.4999C9.00569 13.3679 8.97956 13.2372 8.92879 13.1154C8.87802 12.9935 8.80363 12.8829 8.7099 12.7899L7.4099 11.4999H16.9999C17.2651 11.4999 17.5195 11.6053 17.707 11.7928C17.8945 11.9804 17.9999 12.2347 17.9999 12.4999V16.4999C17.9999 16.7652 18.1053 17.0195 18.2928 17.207C18.4803 17.3946 18.7347 17.4999 18.9999 17.4999C19.2651 17.4999 19.5195 17.3946 19.707 17.207C19.8945 17.0195 19.9999 16.7652 19.9999 16.4999V12.4999C19.9999 11.7043 19.6838 10.9412 19.1212 10.3786C18.5586 9.81601 17.7955 9.49994 16.9999 9.49994Z"
+                                        fill="#546071" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+
+                    <!-- Replies Card with Reply Message -->
+                    <div class="border-b border-other-divider pb-6">
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <img src="./assets/img/mini-profile-replies.png" class="w-10 h-10 rounded-full" alt="">
+                                <div>
+                                    <h6 class="text-sub-4 font-semibold">Adam Muiz</h6>
+                                    <span class="text-caption-2 text-textColor-secondary2">29 Hari yang lalu</span>
+                                </div>
+                            </div>
+                            <p class="text-body-4 text-textColor-primary">kalau untuk cek kesehatan websitenya sendiri
+                                bagaimana gan?</p>
+                            <div class="flex justify-between space-x-10 mb-6">
+                                <div class="flex items-center space-x-2">
+                                    <button>
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.5 21H18.5C19.33 21 20.04 20.5 20.34 19.78L23.36 12.73C23.45 12.5 23.5 12.26 23.5 12V10C23.5 8.9 22.6 8 21.5 8H15.19L16.14 3.43L16.17 3.11C16.17 2.7 16 2.32 15.73 2.05L14.67 1L8.08 7.59C7.72 7.95 7.5 8.45 7.5 9V19C7.5 20.1 8.4 21 9.5 21ZM9.5 9L13.84 4.66L12.5 10H21.5V12L18.5 19H9.5V9ZM1.5 9H5.5V21H1.5V9Z"
+                                                fill="#546071" />
+                                        </svg>
+                                    </button>
+                                    <button class="flex items-center space-x-1 text-sub-6">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.9999 9.49994H7.4099L8.7099 8.20994C8.8982 8.02164 9.00399 7.76624 9.00399 7.49994C9.00399 7.23364 8.8982 6.97825 8.7099 6.78994C8.52159 6.60164 8.2662 6.49585 7.9999 6.49585C7.73359 6.49585 7.4782 6.60164 7.2899 6.78994L4.2899 9.78994C4.19886 9.88505 4.12749 9.99719 4.0799 10.1199C3.97988 10.3634 3.97988 10.6365 4.0799 10.8799C4.12749 11.0027 4.19886 11.1148 4.2899 11.2099L7.2899 14.2099C7.38286 14.3037 7.49346 14.3781 7.61532 14.4288C7.73718 14.4796 7.86788 14.5057 7.9999 14.5057C8.13191 14.5057 8.26261 14.4796 8.38447 14.4288C8.50633 14.3781 8.61693 14.3037 8.7099 14.2099C8.80363 14.117 8.87802 14.0064 8.92879 13.8845C8.97956 13.7627 9.00569 13.632 9.00569 13.4999C9.00569 13.3679 8.97956 13.2372 8.92879 13.1154C8.87802 12.9935 8.80363 12.8829 8.7099 12.7899L7.4099 11.4999H16.9999C17.2651 11.4999 17.5195 11.6053 17.707 11.7928C17.8945 11.9804 17.9999 12.2347 17.9999 12.4999V16.4999C17.9999 16.7652 18.1053 17.0195 18.2928 17.207C18.4803 17.3946 18.7347 17.4999 18.9999 17.4999C19.2651 17.4999 19.5195 17.3946 19.707 17.207C19.8945 17.0195 19.9999 16.7652 19.9999 16.4999V12.4999C19.9999 11.7043 19.6838 10.9412 19.1212 10.3786C18.5586 9.81601 17.7955 9.49994 16.9999 9.49994Z"
+                                                fill="#546071" />
+                                        </svg>
+                                        <span class="text-sub-6 font-semibold text-textColor-secondary">1</span>
+                                    </button>
+                                </div>
+                                <div class="flex justify-center">
+                                    <button class="btn-text" id="replied-btn" onclick="repliedFunction()">Sembunyikan
+                                        Balasan</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-l-primary-hosterBlue px-6 mt-6 ml-3 space-y-3 show"
+                            id="replied-section">
+                            <div class=" flex items-center space-x-3">
+                                <img src="./assets/img/mini-profile-replies.png" class="w-10 h-10 rounded-full" alt="">
+                                <div>
+                                    <h6 class="text-sub-4 font-semibold">Adam Muiz</h6>
+                                    <span class="text-caption-2 text-textColor-secondary2">29 Hari yang lalu</span>
+                                </div>
+                            </div>
+                            <p class="text-body-4 text-textColor-primary w-fit">Bisa melakukan pengecekan
+                                melalui
+                                Urlvoid atau
+                                fitur semacamnya, bisa juga melalui google di url
+                                https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content</p>
+                        </div>
+
+                    </div>
+                    <!-- End Card -->
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <div class="_container">
+        <!-- Banner Section -->
+        <section class="my-20">
+            <!-- Banner -->
+            <div class="bg-linear p-9 rounded-3xl">
+                <div class="grid grid-cols-9 items-center">
+                    <div class="col-span-5 space-y-6">
+                        <h1 class="text-h5 text-white">Ingin jadi yang pertama tau <br> artikel terbaru
+                            kami?
+                        </h1>
+                        <p class="text-body-3 text-white">Kami akan mengirimkan pemberitahuan artikel
+                            terbaru
+                            kami melalui
+                            email Anda. Ingin
+                            mendapatkan pemberitahuan?</p>
+                    </div>
+                    <div class="col-span-4 flex justify-end">
+                        <button class="btn-large bg-btn-primaryState text-white">Langganan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Banner -->
+        </section>
+        <!-- End Section -->
+    </div>
+
+    <section class="bg-background-verySoftBlue py-20">
+        <div class="_container">
+            <h1 class="text-center text-h3 text-textColor-primary">Baca Artikel Terkait</h1>
+            <div class="grid grid-cols-12 gap-x-[1.875rem] mt-9">
+
+                <!-- Content -->
+                <div class="col-span-3 space-y-3">
+
+                    <!-- Thumbnail -->
+                    <img src="./assets/img/artikel-img-2.png" class="w-max rounded-md" alt="">
+                    <!-- End Thumbnail -->
+
+                    <!-- Profile -->
+                    <div class="flex items-center space-x-3">
+                        <img src="./assets/img/mini-profile.png" class="w-6" alt="">
+                        <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                    </div>
+                    <!-- End -->
+
+                    <!-- Article Title & Description -->
+                    <div class="mt-4 space-y-2">
+                        <h6 class="text-h8 text-textColor-primary">4+ Cara Mudah Cek IP Hosting Website
+                        </h6>
+                        <p class="text-caption-2 text-textColor-secondary">Anda ingin tahu cara cek IP
+                            hosting?
+                            Selamat, Anda berada di
+                            halaman yang tepat! IP
+                            hosti ...
+                        </p>
+                    </div>
+                    <!-- End -->
+
+                    <!-- Tag -->
+                    <div class="flex items-center gap-x-3">
+                        <span
+                            class="text-body-5 text-primary-hosterBlue px-4 py-0.5 bg-primary-lightBlue rounded-4xl">Hosting</span>
+                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#29384E" />
+                        </svg>
+                        <span class="text-body-5 text-textColor-primary">5 min read</span>
+                    </div>
+                    <!-- End Tag -->
+
+                </div>
+                <!-- End -->
+
+                <!-- Content -->
+                <div class="col-span-3 space-y-3">
+
+                    <!-- Thumbnail -->
+                    <img src="./assets/img/artikel-img-2.png" class="w-max rounded-md" alt="">
+                    <!-- End Thumbnail -->
+
+                    <!-- Profile -->
+                    <div class="flex items-center space-x-3">
+                        <img src="./assets/img/mini-profile.png" class="w-6" alt="">
+                        <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                    </div>
+                    <!-- End -->
+
+                    <!-- Article Title & Description -->
+                    <div class="mt-4 space-y-2">
+                        <h6 class="text-h8 text-textColor-primary">4+ Cara Mudah Cek IP Hosting Website
+                        </h6>
+                        <p class="text-caption-2 text-textColor-secondary">Anda ingin tahu cara cek IP
+                            hosting?
+                            Selamat, Anda berada di
+                            halaman yang tepat! IP
+                            hosti ...
+                        </p>
+                    </div>
+                    <!-- End -->
+
+                    <!-- Tag -->
+                    <div class="flex items-center gap-x-3">
+                        <span
+                            class="text-body-5 text-primary-hosterBlue px-4 py-0.5 bg-primary-lightBlue rounded-4xl">Hosting</span>
+                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#29384E" />
+                        </svg>
+                        <span class="text-body-5 text-textColor-primary">5 min read</span>
+                    </div>
+                    <!-- End Tag -->
+
+                </div>
+                <!-- End -->
+
+                <!-- Content -->
+                <div class="col-span-3 space-y-3">
+
+                    <!-- Thumbnail -->
+                    <img src="./assets/img/artikel-img-2.png" class="w-max rounded-md" alt="">
+                    <!-- End Thumbnail -->
+
+                    <!-- Profile -->
+                    <div class="flex items-center space-x-3">
+                        <img src="./assets/img/mini-profile.png" class="w-6" alt="">
+                        <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                    </div>
+                    <!-- End -->
+
+                    <!-- Article Title & Description -->
+                    <div class="mt-4 space-y-2">
+                        <h6 class="text-h8 text-textColor-primary">4+ Cara Mudah Cek IP Hosting Website
+                        </h6>
+                        <p class="text-caption-2 text-textColor-secondary">Anda ingin tahu cara cek IP
+                            hosting?
+                            Selamat, Anda berada di
+                            halaman yang tepat! IP
+                            hosti ...
+                        </p>
+                    </div>
+                    <!-- End -->
+
+                    <!-- Tag -->
+                    <div class="flex items-center gap-x-3">
+                        <span
+                            class="text-body-5 text-primary-hosterBlue px-4 py-0.5 bg-primary-lightBlue rounded-4xl">Hosting</span>
+                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#29384E" />
+                        </svg>
+                        <span class="text-body-5 text-textColor-primary">5 min read</span>
+                    </div>
+                    <!-- End Tag -->
+
+                </div>
+                <!-- End -->
+
+                <!-- Content -->
+                <div class="col-span-3 space-y-3">
+
+                    <!-- Thumbnail -->
+                    <img src="./assets/img/artikel-img-2.png" class="w-max rounded-md" alt="">
+                    <!-- End Thumbnail -->
+
+                    <!-- Profile -->
+                    <div class="flex items-center space-x-3">
+                        <img src="./assets/img/mini-profile.png" class="w-6" alt="">
+                        <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                    </div>
+                    <!-- End -->
+
+                    <!-- Article Title & Description -->
+                    <div class="mt-4 space-y-2">
+                        <h6 class="text-h8 text-textColor-primary">4+ Cara Mudah Cek IP Hosting Website
+                        </h6>
+                        <p class="text-caption-2 text-textColor-secondary">Anda ingin tahu cara cek IP
+                            hosting?
+                            Selamat, Anda berada di
+                            halaman yang tepat! IP
+                            hosti ...
+                        </p>
+                    </div>
+                    <!-- End -->
+
+                    <!-- Tag -->
+                    <div class="flex items-center gap-x-3">
+                        <span
+                            class="text-body-5 text-primary-hosterBlue px-4 py-0.5 bg-primary-lightBlue rounded-4xl">Hosting</span>
+                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#29384E" />
+                        </svg>
+                        <span class="text-body-5 text-textColor-primary">5 min read</span>
+                    </div>
+                    <!-- End Tag -->
+
+                </div>
+                <!-- End -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-linear py-[5.75rem]">
+        <h1 class="text-center text-h2 text-white">Awali Kesuksesan Anda Bersama Niagahoster</h1>
+        <p class="text-center text-body-3 text-primary-lightBlue mt-7 mb-[2.625rem]">Kini tidak lagi sulit
+            mewujudkan website
+            impian.
+            Performa hebat,
+            keamanan
+            ekstra, dan
+            <br> layanan
+            dukungan teknis yang bisa diandalkan - semua dengan harga terjangkau!
+        </p>
+        <div class="flex justify-center">
+            <button class="btn-large bg-btn-primaryState text-white">Mulai Sekarang</button>
+        </div>
+    </section>
+    <!-- End Section -->
+
+    <!-- Footer Section -->
+    <footer class="pt-24 pb-[2.625rem] bg-background-veryDarkBlue">
+        <!-- Footer Container -->
+        <div class="_container">
+            <!-- Footer Top -->
+            <div class="grid grid-cols-12">
+                <div class="col-span-3 space-y-8">
+                    <ul>
+                        <li class="text-white text-h8 font-bold mb-4">Web Hosting</li>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Hosting Indonesia</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Cloud Hosting</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Email Hosting</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Web Hosting Unlimited</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Hosting Terbaik</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Hosting Murah</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Hosting Singapore SG</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Keamanan SSL/HTTPS</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Data Center Hosting Terbaik</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Hosting Gratis</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Transfer Hosting</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <li class="text-white text-h8 font-bold mb-4">Domain</li>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Domain</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Domain .ID</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Domain Gratis</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Promosi Domain .COM</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">WHOIS</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Transfer Domain</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-span-3 space-y-8">
+                    <ul>
+                        <li class="text-white text-h8 font-bold mb-4">Virtual Private Server</li>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">VPS KVM Indonesia</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Cloud VPS Hosting</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">CyberPanel VPS Hosting</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <li class="text-white text-h8 font-bold mb-4">Wordpress Hosting</li>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Wordpress Hosting</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Managed Wordpress</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <li class="text-white text-h8 font-bold mb-4">Website</li>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Website Instan</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Jasa Pembuatan Website</li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <li class="text-white text-h8 font-bold mb-4">Bantuan</li>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Cara Pembayaran</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Ebook Gratis</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Knowledge Base</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Blog</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Course</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Forum</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-span-6">
+                    <div class="grid grid-cols-6">
+                        <div class="col-span-3 space-y-8">
+                            <ul>
+                                <li class="text-white text-h8 font-bold mb-4">Kemitraan</li>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Poin</li>
+                                </a>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Partner</li>
+                                </a>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Program Afiliasi
+                                        Niagahoster
+                                    </li>
+                                </a>
+                            </ul>
+                            <ul>
+                                <li class="text-white text-h8 font-bold mb-4">Perusahaan</li>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Tentang Niagahoster</li>
+                                </a>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Kontak</li>
+                                </a>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Karir</li>
+                                </a>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Event</li>
+                                </a>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Status Layanan</li>
+                                </a>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Review Pelanggan</li>
+                                </a>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Penawaran & Promo Spesial
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Virtual
+                                        Summit
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="col-span-3 space-y-8">
+                            <img src="./assets/img/footer-logo.png" class="w-[15.938rem]" alt="">
+                            <!-- Detail 1 -->
+                            <p class="text-white text-body-4-alt">Misi kami adalah membantu jutaan <br> orang
+                                memanfaatkan
+                                potensi yang ada <br> di internet untuk membangun <br> kesuksesan online.</p>
+                            <!-- End -->
+
+                            <!-- Detail 2 -->
+                            <p class="text-white text-body-4-alt">Jl. Palagan Tentara Pelajar No 81 <br> Jongkang,
+                                Sariharjo,
+                                Ngaglik, Sleman <br> Daerah Istimewa Yogyakarta 55581</p>
+
+                            <!-- End -->
+
+                            <!-- Detail 3 -->
+                            <ul>
+                                <li class="text-white text-body-4-alt">Telepon: 0274-2885822</li>
+                                <li class="text-white text-body-4-alt">Whatsapp: 085943258274</li>
+                                <li class="text-white text-body-4-alt">Telegram: @niagahost_bot</li>
+                            </ul>
+                            <!-- End -->
+
+                            <!-- Icon Section -->
+                            <div class="space-y-[1.125rem]">
+                                <div class="flex space-x-[1.125rem]">
+                                    <a href="">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="24" fill="#546071" />
+                                            <path
+                                                d="M27.1199 17.32H28.9999V14.14C28.0896 14.0454 27.175 13.9986 26.2599 14C23.5399 14 21.6799 15.66 21.6799 18.7V21.32H18.6099V24.88H21.6799V34H25.3599V24.88H28.4199L28.8799 21.32H25.3599V19.05C25.3599 18 25.6399 17.32 27.1199 17.32Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="24" fill="#546071" />
+                                            <path
+                                                d="M29.34 17.46C29.1027 17.46 28.8707 17.5304 28.6733 17.6622C28.476 17.7941 28.3222 17.9815 28.2313 18.2008C28.1405 18.4201 28.1168 18.6613 28.1631 18.8941C28.2094 19.1269 28.3236 19.3407 28.4915 19.5085C28.6593 19.6764 28.8731 19.7906 29.1059 19.8369C29.3387 19.8832 29.5799 19.8595 29.7992 19.7687C30.0185 19.6778 30.2059 19.524 30.3378 19.3267C30.4696 19.1293 30.54 18.8973 30.54 18.66C30.54 18.3417 30.4136 18.0365 30.1885 17.8115C29.9635 17.5864 29.6583 17.46 29.34 17.46ZM33.94 19.88C33.9206 19.0503 33.7652 18.2294 33.48 17.45C33.2257 16.7831 32.83 16.1793 32.32 15.68C31.8248 15.1674 31.2196 14.7742 30.55 14.53C29.7727 14.2362 28.9508 14.0772 28.12 14.06C27.06 14 26.72 14 24 14C21.28 14 20.94 14 19.88 14.06C19.0492 14.0772 18.2273 14.2362 17.45 14.53C16.7817 14.7766 16.1769 15.1696 15.68 15.68C15.1674 16.1752 14.7742 16.7804 14.53 17.45C14.2362 18.2273 14.0772 19.0492 14.06 19.88C14 20.94 14 21.28 14 24C14 26.72 14 27.06 14.06 28.12C14.0772 28.9508 14.2362 29.7727 14.53 30.55C14.7742 31.2196 15.1674 31.8248 15.68 32.32C16.1769 32.8304 16.7817 33.2234 17.45 33.47C18.2273 33.7638 19.0492 33.9228 19.88 33.94C20.94 34 21.28 34 24 34C26.72 34 27.06 34 28.12 33.94C28.9508 33.9228 29.7727 33.7638 30.55 33.47C31.2196 33.2258 31.8248 32.8326 32.32 32.32C32.8322 31.8226 33.2283 31.2182 33.48 30.55C33.7652 29.7706 33.9206 28.9497 33.94 28.12C33.94 27.06 34 26.72 34 24C34 21.28 34 20.94 33.94 19.88ZM32.14 28C32.1327 28.6348 32.0178 29.2637 31.8 29.86C31.6403 30.2952 31.3839 30.6884 31.05 31.01C30.7256 31.3405 30.3332 31.5964 29.9 31.76C29.3037 31.9778 28.6748 32.0927 28.04 32.1C27.04 32.15 26.67 32.16 24.04 32.16C21.41 32.16 21.04 32.16 20.04 32.1C19.3809 32.1123 18.7246 32.0109 18.1 31.8C17.6858 31.6281 17.3114 31.3728 17 31.05C16.6681 30.7287 16.4148 30.3352 16.26 29.9C16.0159 29.2952 15.8804 28.6519 15.86 28C15.86 27 15.8 26.63 15.8 24C15.8 21.37 15.8 21 15.86 20C15.8645 19.3511 15.983 18.7079 16.21 18.1C16.386 17.6779 16.6563 17.3017 17 17C17.3038 16.6562 17.6793 16.3831 18.1 16.2C18.7096 15.98 19.352 15.8651 20 15.86C21 15.86 21.37 15.8 24 15.8C26.63 15.8 27 15.8 28 15.86C28.6348 15.8673 29.2637 15.9822 29.86 16.2C30.3144 16.3687 30.7223 16.6428 31.05 17C31.3777 17.3072 31.6338 17.6827 31.8 18.1C32.0223 18.7089 32.1373 19.3518 32.14 20C32.19 21 32.2 21.37 32.2 24C32.2 26.63 32.19 27 32.14 28ZM24 18.87C22.9858 18.872 21.995 19.1745 21.1527 19.7394C20.3103 20.3043 19.6544 21.1062 19.2676 22.0438C18.8809 22.9813 18.7807 24.0125 18.9798 25.0069C19.1789 26.0014 19.6682 26.9145 20.3861 27.631C21.1039 28.3474 22.018 28.835 23.0129 29.0321C24.0077 29.2293 25.0387 29.1271 25.9755 28.7385C26.9123 28.35 27.7129 27.6924 28.2761 26.849C28.8394 26.0056 29.14 25.0142 29.14 24C29.1413 23.3251 29.0092 22.6566 28.7512 22.033C28.4933 21.4093 28.1146 20.8428 27.6369 20.3661C27.1592 19.8893 26.5919 19.5117 25.9678 19.2549C25.3436 18.9982 24.6749 18.8674 24 18.87ZM24 27.33C23.3414 27.33 22.6976 27.1347 22.15 26.7688C21.6023 26.4029 21.1755 25.8828 20.9235 25.2743C20.6714 24.6659 20.6055 23.9963 20.734 23.3503C20.8625 22.7044 21.1796 22.111 21.6453 21.6453C22.111 21.1796 22.7044 20.8625 23.3503 20.734C23.9963 20.6055 24.6659 20.6714 25.2743 20.9235C25.8828 21.1755 26.4029 21.6023 26.7688 22.15C27.1347 22.6976 27.33 23.3414 27.33 24C27.33 24.4373 27.2439 24.8703 27.0765 25.2743C26.9092 25.6784 26.6639 26.0454 26.3547 26.3547C26.0454 26.6639 25.6784 26.9092 25.2743 27.0765C24.8703 27.2439 24.4373 27.33 24 27.33Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="24" fill="#546071" />
+                                            <path
+                                                d="M32.4701 13.9999H15.5301C15.3396 13.9973 15.1506 14.0321 14.9736 14.1026C14.7967 14.173 14.6354 14.2776 14.4989 14.4104C14.3624 14.5432 14.2533 14.7016 14.1781 14.8765C14.1028 15.0514 14.0627 15.2395 14.0601 15.4299V32.5699C14.0627 32.7603 14.1028 32.9484 14.1781 33.1233C14.2533 33.2982 14.3624 33.4566 14.4989 33.5894C14.6354 33.7222 14.7967 33.8268 14.9736 33.8972C15.1506 33.9676 15.3396 34.0025 15.5301 33.9999H32.4701C32.6605 34.0025 32.8496 33.9676 33.0265 33.8972C33.2034 33.8268 33.3648 33.7222 33.5013 33.5894C33.6378 33.4566 33.7468 33.2982 33.8221 33.1233C33.8974 32.9484 33.9375 32.7603 33.9401 32.5699V15.4299C33.9375 15.2395 33.8974 15.0514 33.8221 14.8765C33.7468 14.7016 33.6378 14.5432 33.5013 14.4104C33.3648 14.2776 33.2034 14.173 33.0265 14.1026C32.8496 14.0321 32.6605 13.9973 32.4701 13.9999ZM20.0901 30.7399H17.0901V21.7399H20.0901V30.7399ZM18.5901 20.4799C18.1763 20.4799 17.7795 20.3155 17.487 20.023C17.1944 19.7304 17.0301 19.3336 17.0301 18.9199C17.0301 18.5062 17.1944 18.1094 17.487 17.8168C17.7795 17.5243 18.1763 17.3599 18.5901 17.3599C18.8098 17.335 19.0322 17.3567 19.2429 17.4238C19.4536 17.4908 19.6478 17.6016 19.8127 17.7489C19.9776 17.8961 20.1096 18.0766 20.1999 18.2784C20.2903 18.4802 20.337 18.6988 20.337 18.9199C20.337 19.141 20.2903 19.3596 20.1999 19.5614C20.1096 19.7632 19.9776 19.9437 19.8127 20.0909C19.6478 20.2382 19.4536 20.349 19.2429 20.416C19.0322 20.483 18.8098 20.5048 18.5901 20.4799ZM30.9101 30.7399H27.9101V25.9099C27.9101 24.6999 27.4801 23.9099 26.3901 23.9099C26.0527 23.9124 25.7242 24.0182 25.4489 24.2131C25.1735 24.408 24.9645 24.6826 24.8501 24.9999C24.7718 25.2349 24.7379 25.4825 24.7501 25.7299V30.7299H21.7501C21.7501 30.7299 21.7501 22.5499 21.7501 21.7299H24.7501V22.9999C25.0226 22.527 25.419 22.1374 25.8965 21.8731C26.374 21.6088 26.9146 21.4797 27.4601 21.4999C29.4601 21.4999 30.9101 22.7899 30.9101 25.5599V30.7399Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="flex space-x-[1.125rem]">
+                                    <a href="">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="24" fill="#546071" />
+                                            <path
+                                                d="M34 17.8C33.2483 18.1261 32.4534 18.3416 31.64 18.44C32.4982 17.9273 33.1413 17.1207 33.45 16.17C32.6436 16.65 31.7608 16.9883 30.84 17.17C30.2245 16.5025 29.405 16.0583 28.5098 15.9068C27.6147 15.7554 26.6945 15.9053 25.8938 16.3332C25.093 16.761 24.4569 17.4425 24.0852 18.2708C23.7135 19.0991 23.6273 20.0274 23.84 20.91C22.2094 20.8275 20.6144 20.4029 19.1587 19.6638C17.7029 18.9247 16.4188 17.8877 15.39 16.62C15.0291 17.2501 14.8395 17.9638 14.84 18.69C14.8387 19.3643 15.0042 20.0286 15.3218 20.6235C15.6393 21.2185 16.099 21.7257 16.66 22.1C16.008 22.0822 15.3699 21.9073 14.8 21.59V21.64C14.8049 22.5849 15.136 23.4991 15.7373 24.2279C16.3386 24.9568 17.1733 25.4556 18.1 25.64C17.7433 25.7485 17.3729 25.8058 17 25.81C16.7419 25.807 16.4844 25.7835 16.23 25.74C16.4939 26.5528 17.0046 27.2631 17.6911 27.7721C18.3775 28.2811 19.2056 28.5635 20.06 28.58C18.6172 29.7152 16.8359 30.3348 15 30.34C14.6657 30.3411 14.3317 30.321 14 30.28C15.8744 31.4902 18.0588 32.1327 20.29 32.13C21.8297 32.146 23.3571 31.855 24.7831 31.274C26.2091 30.6931 27.505 29.8338 28.5952 28.7465C29.6854 27.6591 30.548 26.3654 31.1326 24.9409C31.7172 23.5164 32.012 21.9897 32 20.45C32 20.28 32 20.1 32 19.92C32.7847 19.3348 33.4615 18.6174 34 17.8Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="24" fill="#546071" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M28.1008 14C28.4471 16.9786 30.1096 18.7544 33 18.9433V22.2934C31.3249 22.4571 29.8577 21.9092 28.1511 20.8765V27.1422C28.1511 35.1018 19.4736 37.5892 15.9849 31.884C13.7431 28.2127 15.1159 21.7707 22.3073 21.5125V25.0452C21.7595 25.1334 21.1738 25.2719 20.6386 25.4545C19.0391 25.9961 18.1323 27.0099 18.3842 28.7983C18.8691 32.224 25.1537 33.2378 24.631 26.544V14.0063H28.1008V14Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="24" fill="#546071" />
+                                            <path
+                                                d="M35 21.71C35.0495 20.2786 34.7365 18.858 34.09 17.58C33.6514 17.0556 33.0427 16.7017 32.37 16.58C29.5875 16.3275 26.7936 16.224 24 16.27C21.2167 16.2219 18.4327 16.3221 15.66 16.57C15.1118 16.6697 14.6045 16.9268 14.2 17.31C13.3 18.14 13.2 19.56 13.1 20.76C12.9549 22.9175 12.9549 25.0824 13.1 27.24C13.129 27.9154 13.2295 28.5858 13.4 29.24C13.5206 29.745 13.7645 30.2123 14.11 30.6C14.5173 31.0034 15.0364 31.2752 15.6 31.38C17.7559 31.6461 19.9282 31.7564 22.1 31.71C25.6 31.76 28.67 31.71 32.3 31.43C32.8775 31.3316 33.4112 31.0595 33.83 30.65C34.11 30.3699 34.3191 30.0271 34.44 29.65C34.7977 28.5526 34.9733 27.4041 34.96 26.25C35 25.69 35 22.31 35 21.71ZM21.74 26.85V20.66L27.66 23.77C26 24.69 23.81 25.73 21.74 26.85Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Section -->
+
+                        </div>
+                        <div class="col-span-6 mt-[1.875rem]">
+                            <form class="">
+                                <div class="space-y-4">
+                                    <label for="text"
+                                        class="block mb-2 text-button-4 font-bold text-white">Newsletter</label>
+                                    <div class="flex space-x-3">
+                                        <input type="text" id="input"
+                                            class="bg-white border border-other-border text-gray-900 text-body-3 rounded-3xl focus:ring-primary-hosterBlue focus:border-primary-hosterBlue block w-[22rem] px-8 py-3"
+                                            placeholder="Write your input here" required>
+                                        <button type="submit"
+                                            class="text-white btn-medium bg-btn-primaryState focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold">Berlangganan</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+
+            <hr class="border-textColor-secondary mt-[3.875rem] mb-8">
+
+            <!-- Footer Bottom -->
+            <div class="grid grid-cols-12">
+                <div class="col-span-8">
+                    <span class="text-body-5-alt text-textColor-secondary2">Copyright ©2022 Niagahoster | Hosting
+                        powered by
+                        PHP8, CloudLinux,
+                        CloudFlare, BitNinja and DC
+                        DCI-Indonesia | <br> Cloud VPS Murah powered by Webuzo Softaculous, Intel SSD and cloud
+                        computing
+                        technology</span>
+                </div>
+
+                <div class="col-span-4 flex justify-end">
+                    <span class="text-body-5-alt text-white"><a href="">Syarat dan Ketentuan</a> | <a href="">Kebijakan
+                            Privasi</a></span>
+                </div>
+            </div>
+            <!-- End -->
+        </div>
+        <!-- End Container -->
+    </footer>
+    <!-- End Section -->
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+<script>
+    // Textarea Function
+    $('.trigger').hide();
+
+    $('#textarea').on('keyup', function () {
+        if (this.value.length) {
+            $('.trigger').show();
+        } else {
+            $('.trigger').hide();
+        }
+    });
+    // End Function
+
+    // Replied Function
+    function repliedFunction() {
+        const targetDiv = document.getElementById("replied-section");
+        if (targetDiv.className == "hide") {
+            targetDiv.className = "show";
+            document.getElementById("replied-section").style.transition = "all 2s";
+            document.getElementById("replied-btn").innerHTML = "Sembunyikan Balasan";
+        } else {
+            targetDiv.className = "hide";
+            document.getElementById("replied-section").style.transition = "all 2s";
+            document.getElementById("replied-btn").innerHTML = "Tampilkan Balasan";
+        }
+    }
+    // End Function
+</script>
+
+</html>
