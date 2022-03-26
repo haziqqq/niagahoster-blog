@@ -46,11 +46,67 @@
         line-height: 1.625rem;
     }
 
-    ._text-h1 {
-        @apply text-black text-h1;
+    a._disabled {
+        @apply pointer-events-none cursor-default;
     }
 
-    ._section-header {
+    ._text-h1 {
+        @apply text-black text-h1 font-bold;
+    }
+
+    ._text-h2 {
+        @apply text-black text-h2 font-bold;
+    }
+
+    ._text-h3 {
+        @apply text-black text-h3 font-bold;
+    }
+
+    ._text-h4 {
+        @apply text-black text-h4 font-bold;
+    }
+
+    ._text-h5 {
+        @apply text-black text-h5 font-bold;
+    }
+
+    ._text-h6 {
+        @apply text-black text-h6 font-bold;
+    }
+
+    ._text-h7 {
+        @apply text-black text-h7 font-bold;
+    }
+
+    ._text-h8 {
+        @apply text-black text-h8 font-bold;
+    }
+
+    ._text-sub-1 {
+        @apply text-black text-sub-1 font-semibold;
+    }
+
+    ._text-sub-2 {
+        @apply text-black text-sub-2 font-semibold;
+    }
+
+    ._text-sub-3 {
+        @apply text-black text-sub-3 font-semibold;
+    }
+
+    ._text-sub-4 {
+        @apply text-black text-sub-4 font-semibold;
+    }
+
+    ._text-sub-5 {
+        @apply text-black text-sub-5 font-semibold;
+    }
+
+    ._text-sub-6 {
+        @apply text-black text-sub-6 font-semibold;
+    }
+
+    ._text-section-header {
         @apply text-black text-h3;
     }
 
@@ -60,13 +116,17 @@
 }
 
 @layer components {
-    /* Global Component */
+    /* GLOBAL COMPONENT */
     .bg-linear {
         background: linear-gradient(249.77deg, #0094FF -1.99%, #007AFF 43.52%, #026CE8 95.86%), #F0F7FF;
     }
 
     ._content-list {
         @apply grid grid-cols-9 items-start gap-x-16;
+    }
+
+    ._content-grid {
+        @apply col-span-3 space-y-3;
     }
 
     ._name-tag {
@@ -85,7 +145,7 @@
         @apply space-y-2;
     }
 
-    ._content-body .body-title {
+    ._content-body ._body-title {
         @apply text-h8 text-textColor-primary;
     }
 
@@ -94,7 +154,7 @@
     }
 
     ._content-tag {
-        @apply flex items-center space-x-4;
+        @apply flex items-center space-x-3;
     }
 
     ._tag-info {
@@ -102,13 +162,62 @@
     }
 
     ._tag-info ._tag-text {
-        @apply text-body-5 text-textColor-primary;
+        @apply text-body-5 text-textColor-secondary;
     }
 
+    ._banner-75 {
+        @apply bg-linear p-9 rounded-3xl;
+    }
 
-    /* End Global Component */
+    ._banner-full {
+        @apply bg-linear py-9 px-[4.875rem] rounded-3xl;
+    }
 
-    /* Navbar */
+    ._banner-container {
+        @apply grid grid-cols-9 items-center;
+    }
+
+    ._banner-container ._banner-headline {
+        @apply col-span-5 space-y-6;
+    }
+
+    ._banner-container ._banner-headline ._headline-title {
+        @apply text-h5 text-white;
+    }
+
+    ._banner-container ._banner-headline ._headline-desc {
+        @apply text-body-3 text-white;
+    }
+
+    ._banner-container ._banner-btn-section {
+        @apply col-span-4 flex justify-end;
+    }
+
+    ._category-title {
+        @apply text-textColor-primary font-semibold rounded-lg text-sub-5 py-2 text-center inline-flex items-center;
+    }
+
+    ._category-item {
+        @apply py-2 text-body-5 text-textColor-primary hover:text-primary-hosterBlue hover:_text-sub-6;
+    }
+
+    ._cta-section {
+        @apply bg-linear py-[5.75rem];
+    }
+
+    ._form-label {
+        @apply block mb-2 text-button-4 font-bold text-white;
+    }
+
+    ._form-input {
+        @apply bg-white border border-other-border text-gray-900 focus:ring-primary-hosterBlue focus:border-primary-hosterBlue text-body-3 rounded-3xl block w-[22rem] px-8 py-3;
+    }
+    /* END GLOBAL COMPONENT */
+
+
+
+
+    /* NAVBAR */
     header ._navbar-menu {
         @apply py-2 pr-4 pl-3 text-white text-sub-4 font-semibold rounded md:bg-transparent md:text-white md:p-0 flex items-center;
     }
@@ -141,10 +250,6 @@
         @apply flex flex-col mt-4 md:flex-row md:space-x-10 md:mt-0 md:text-sm md:font-semibold;
     }
 
-    /* ._navbar ._navbar-menu {
-        @apply py-2 pr-4 pl-3 text-white text-sub-4 font-semibold rounded md:bg-transparent md:text-white md:p-0 flex items-center;
-    } */
-
     ._menu {
         @apply py-3 text-white hidden lg:flex justify-center mt-[5rem] space-x-10;
     }
@@ -156,21 +261,23 @@
     ._menu ._menu-item ._menu-content {
         @apply absolute hidden text-gray-700 pt-1;
     }
+    /* END NAVBAR */
 
-    /* ._menu ._menu-item ._menu-content ._sasa{
-        @apply ;
-    }  */ 
-    /* End Navbar */
 
-    /* Hero Section */
+
+
+    /* HERO SECTION */
     ._hero {
         @apply bg-linear pt-16;
     }
-    /* End Section */
+    /* END SECTION */
 
-    /* Button */
-    .btn-primary {
-        @apply bg-btn-primaryState text-white;
+
+
+
+    /* BUTTON */
+    ._btn-primary {
+        @apply bg-btn-primaryState text-white hover:bg-btn-hoverState hover:transition-all hover:duration-300 hover:ease-in-out focus:border-2 focus:border-white _elevation-btn-primary-2;
     }
 
     .btn-secondary {
@@ -178,7 +285,7 @@
     }
 
     .btn-text {
-        @apply bg-transparent text-button-5 font-bold text-primary-hosterBlue hover:bg-btn-textStateHover hover:transition-all hover:duration-500 hover:ease-out;
+        @apply bg-transparent text-button-5 font-bold text-primary-hosterBlue hover:bg-btn-textStateHover hover:transition-all hover:duration-300 hover:ease-in-out;
     }
 
     .btn-small {
@@ -192,15 +299,38 @@
     .btn-large {
         @apply px-16 py-3 text-button-1 font-bold rounded-5xl;
     } 
-    /* End */
+    /* END BUTTON */
 
-    /* Badge */
+
+
+
+    /* BADGE */
     ._badge {
         @apply text-body-5 text-primary-hosterBlue px-4 py-0.5 bg-primary-lightBlue rounded-4xl;
     }
-    /* End Badge */
+    /* END BADGE */
 
-    /* Search Input Component */
+
+
+
+    /* BREADCRUMB */
+    ._breadcrumb {
+        @apply inline-flex items-center space-x-1 md:space-x-1.5;
+    }
+
+    ._breadcrumb ._breadcrumb-nav {
+        @apply inline-flex items-center text-caption-2 text-primary-hosterBlue hover:text-primary-darkBlue ml-1;
+    }
+
+    ._breadcrumb ._breadcrumb-disabled {
+        @apply inline-flex items-center text-caption-2 text-textColor-secondary hover:text-primary-darkBlue ml-1;
+    }
+    /* END BREADCRUMB */
+
+
+
+
+    /* SEARCH INPUT COMPONENT */
     ._form-search {
         @apply rounded-l-4xl px-8 py-3 border border-other-border border-r-0 text-body-3-alt w-[15.938rem] lg:w-[33.75rem] focus:ring-primary-hosterBlue focus:border-primary-hosterBlue focus:border-2;
     }
@@ -216,12 +346,68 @@
     .search-btn__mobile {
         @apply rounded-r-4xl border border-l-0 px-[1.125rem] border-other-border bg-white focus:ring-primary-hosterBlue focus:border-primary-hosterBlue;
     }
-    /* End */
+    /* END SEARCH INPUT COMPONENT */
+
+
+    
+
+    /* PAGINATION */
+    ._pagination-set {
+        @apply inline-flex items-center space-x-[1.125rem];
+    }
+
+    ._pagination-set ._pagination-item  {
+        @apply block p-[0.938rem] ml-0 text-other-divider bg-white rounded-lg border border-other-divider hover:bg-gray-100 hover:text-gray-700;
+    }
+
+    ._pagination-set ._page-link {
+        @apply px-6 py-[1.080rem] font-semibold text-textColor-primary bg-white rounded-lg border border-other-divider hover:bg-gray-100 hover:text-gray-700;
+    }
+
+    ._pagination-set ._active {
+        @apply bg-primary-hosterBlue text-white hover:bg-primary-hosterBlue hover:text-white border-0;
+    }
+
+    ._pagination-set ._spacer {
+        @apply border-0 pointer-events-none px-1.5;
+    }
+    /* END PAGINATION */
+
+
+    
+
+    /* FOOTER */
+    ._footer {
+        @apply pt-24 pb-[2.625rem] bg-background-veryDarkBlue;
+    }
+
+    ._footer ._footer-title {
+        @apply text-white text-h8 font-bold mb-4;
+    }
+
+    ._footer ._footer-item {
+        @apply mb-2;
+    }
+
+    ._footer ._footer-item ._footer-nav {
+        @apply text-textColor-secondary2 text-body-4-alt;
+    }
+
+    ._footer ._footer-text {
+        @apply text-white text-body-4-alt;
+    }
+    /* END FOOTER */
 }
 
 @layer utilities {
   ._container {
       @apply container mx-auto
+  }
+
+  ._sticky {
+      height: -10rem;
+      position: sticky;
+      top: 10rem;
   }
 
   .text-animation::after {
@@ -258,5 +444,24 @@
   .hide {
       @apply hidden;
   }
+
+  /* Elevation */
+  ._elevation-btn-primary-1 {
+    box-shadow: 0px 4px 6px rgba(255, 176, 77, 0.24);
+  }
+
+  ._elevation-btn-primary-2 {
+    box-shadow: 0px 8px 10px rgba(255, 176, 77, 0.32);
+  }
+
+  ._elevation-btn-destruct-1 {
+    box-shadow: 0px 4px 6px rgba(244, 54, 54, 0.24);
+  }
+
+  ._elevation-btn-destruct-2 {
+    box-shadow: 0px 8px 10px rgba(244, 54, 54, 0.32);
+  }
+  /* End Elevation */
+
 }
 

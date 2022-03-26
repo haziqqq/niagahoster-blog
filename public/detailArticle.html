@@ -13,17 +13,33 @@
 
 <body>
 
-    <header class="bg-linear fixed top-0 left-0 right-0 py-5 z-50 shadow-md">
-        <div class="flex flex-wrap justify-between items-center mx-auto px-2.5 lg:px-10">
-            <a href="index.html" class="flex items-center">
-                <img src="./assets/img/logo.png" class="w-32 lg:w-40" alt="Flowbite Logo">
+    <header id="header">
+        <!-- Navbar Section -->
+        <nav class="_navbar bg-linear">
+            <a href="index.html" class="_navbar-brand">
+                <img src="./assets/img/logo.png" class="" alt="Niagahoster Logo">
             </a>
-            <div class="flex md:order-2">
-                <button type="button"
-                    class="btn-secondary border-btn-neutralState border focus:ring-4 focus:outline-none focus:ring-blue-300 mr-3 md:mr-0">Login
-                </button>
-                <button data-collapse-toggle="mobile-menu-4" type="button"
-                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            <div class="_navbar-toggler-container">
+                <div class="_navbar-right-menu">
+                    <button type="button" class="_navbar-menu"><svg width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.5 19C8.20333 19 7.91332 19.088 7.66664 19.2528C7.41997 19.4176 7.22771 19.6519 7.11418 19.926C7.00065 20.2001 6.97094 20.5017 7.02882 20.7926C7.0867 21.0836 7.22956 21.3509 7.43934 21.5607C7.64912 21.7704 7.91639 21.9133 8.20736 21.9712C8.49834 22.0291 8.79994 21.9993 9.07403 21.8858C9.34811 21.7723 9.58238 21.58 9.7472 21.3334C9.91203 21.0867 10 20.7967 10 20.5C10 20.1022 9.84196 19.7206 9.56066 19.4393C9.27936 19.158 8.89782 19 8.5 19ZM19 16H7C6.73478 16 6.48043 15.8946 6.29289 15.7071C6.10536 15.5196 6 15.2652 6 15C6 14.7348 6.10536 14.4804 6.29289 14.2929C6.48043 14.1054 6.73478 14 7 14H15.491C16.1425 13.998 16.7758 13.7848 17.2959 13.3925C17.8161 13.0002 18.195 12.4499 18.376 11.824L19.961 6.274C20.0034 6.12526 20.0107 5.96872 19.9823 5.81669C19.954 5.66465 19.8907 5.52126 19.7976 5.3978C19.7045 5.27433 19.584 5.17414 19.4456 5.10512C19.3072 5.0361 19.1547 5.00011 19 5H6.74C6.53281 4.41702 6.15083 3.91213 5.64616 3.55421C5.14149 3.19629 4.5387 3.00275 3.92 3H3C2.73478 3 2.48043 3.10536 2.29289 3.29289C2.10536 3.48043 2 3.73478 2 4C2 4.26522 2.10536 4.51957 2.29289 4.70711C2.48043 4.89464 2.73478 5 3 5H3.921C4.13815 5.00069 4.34924 5.0717 4.52266 5.2024C4.69608 5.33309 4.8225 5.51644 4.883 5.725L5.038 6.27V6.275L6.679 12.017C5.91517 12.0987 5.21176 12.4702 4.71375 13.0551C4.21574 13.64 3.96107 14.3936 4.00222 15.1607C4.04338 15.9278 4.37722 16.6499 4.93496 17.1781C5.49269 17.7064 6.23181 18.0005 7 18H19C19.2652 18 19.5196 17.8946 19.7071 17.7071C19.8946 17.5196 20 17.2652 20 17C20 16.7348 19.8946 16.4804 19.7071 16.2929C19.5196 16.1054 19.2652 16 19 16ZM17.674 7L16.454 11.274C16.3936 11.4829 16.2671 11.6666 16.0935 11.7975C15.9199 11.9284 15.7085 11.9995 15.491 12H8.754L8.499 11.108L7.326 7H17.674ZM16.5 19C16.2033 19 15.9133 19.088 15.6666 19.2528C15.42 19.4176 15.2277 19.6519 15.1142 19.926C15.0006 20.2001 14.9709 20.5017 15.0288 20.7926C15.0867 21.0836 15.2296 21.3509 15.4393 21.5607C15.6491 21.7704 15.9164 21.9133 16.2074 21.9712C16.4983 22.0291 16.7999 21.9993 17.074 21.8858C17.3481 21.7723 17.5824 21.58 17.7472 21.3334C17.912 21.0867 18 20.7967 18 20.5C18 20.1022 17.842 19.7206 17.5607 19.4393C17.2794 19.158 16.8978 19 16.5 19Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <button type="button" class="_navbar-menu">ID
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.0002 9.16994C16.8128 8.98369 16.5594 8.87915 16.2952 8.87915C16.031 8.87915 15.7776 8.98369 15.5902 9.16994L12.0002 12.7099L8.46019 9.16994C8.27283 8.98369 8.01938 8.87915 7.75519 8.87915C7.49101 8.87915 7.23756 8.98369 7.05019 9.16994C6.95646 9.26291 6.88207 9.37351 6.8313 9.49537C6.78053 9.61723 6.75439 9.74793 6.75439 9.87994C6.75439 10.012 6.78053 10.1427 6.8313 10.2645C6.88207 10.3864 6.95646 10.497 7.05019 10.5899L11.2902 14.8299C11.3832 14.9237 11.4938 14.9981 11.6156 15.0488C11.7375 15.0996 11.8682 15.1257 12.0002 15.1257C12.1322 15.1257 12.2629 15.0996 12.3848 15.0488C12.5066 14.9981 12.6172 14.9237 12.7102 14.8299L17.0002 10.5899C17.0939 10.497 17.1683 10.3864 17.2191 10.2645C17.2699 10.1427 17.296 10.012 17.296 9.87994C17.296 9.74793 17.2699 9.61723 17.2191 9.49537C17.1683 9.37351 17.0939 9.26291 17.0002 9.16994Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <button type="button"
+                        class="btn-small btn-secondary font-semibold bg-transparent text-white border-btn-neutralState focus:ring-4 focus:outline-none focus:ring-blue-300 mr-3 md:mr-0">Login
+                    </button>
+                </div>
+                <button data-collapse-toggle="mobile-menu-4" type="button" class="_navbar-toggler"
                     aria-controls="mobile-menu-4" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -39,158 +55,144 @@
                     </svg>
                 </button>
             </div>
-            <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-4">
-                <ul class="flex flex-col mt-4 md:flex-row md:space-x-10 md:mt-0 md:text-sm md:font-semibold">
-                    <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-white text-sub-4 bg-blue-700 rounded md:bg-transparent md:text-white md:p-0"
-                            aria-current="page">Hosting</a>
+            <div class="_navbar-collapse" id="mobile-menu-4">
+                <ul class="_navbar-nav">
+                    <li class="_navbar-menu">
+                        <a href="#" class="" aria-current="page">Hosting</a>
                     </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">VPS</a>
+                    <li class="_navbar-menu">
+                        <a href="#" class="">VPS</a>
                     </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Domain</a>
+                    <li class="_navbar-menu">
+                        <a href="#" class="">Domain</a>
                     </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Website</a>
+                    <li class="_navbar-menu">
+                        <a href="#" class="">Website</a>
                     </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Kemitraan</a>
+                    <li class="_navbar-menu">
+                        <a href="#" class="">Kemitraan</a>
                     </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Wawasan</a>
+                    <li class="_navbar-menu">
+                        <a href="#" class="">Wawasan</a>
                     </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-white text-sub-4 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Acara</a>
+                    <li class="_navbar-menu">
+                        <a href="#" class="">Acara</a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </header>
+        </nav>
+        <!-- End Section -->
 
-    <!-- Menu Section -->
-    <nav class="bg-primary-darkBlue">
-        <ul class="py-3 text-white hidden lg:flex justify-center mt-[4.95rem] space-x-10">
-            <div class="group inline-block relative">
-                <button class="font-semibold rounded inline-flex items-center">
-                    <span class="mr-1 text-sub-4">Tutorial</span>
+        <!-- Menu Section -->
+        <div class="_menu bg-primary-darkBlue">
+            <div class="_menu-item group">
+                <button class="_navbar-menu">
+                    <span class="mr-1">Tutorial</span>
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                 </button>
-                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
-                    <li class="">
-                        <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                            href="#">One</a>
+                <ul class="_menu-content group-hover:block">
+                    <li class="rounded-t bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
+                        <a class="" href=" #">One</a>
                     </li>
                     <li class="">
-                        <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
+                        <a class="bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
                     </li>
                     <li class="">
-                        <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        <a class="rounded-b bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                             href="#">Three
                             is the magic number</a>
                     </li>
                 </ul>
             </div>
-            <div class="group inline-block relative">
-                <button class="font-semibold rounded inline-flex items-center">
+            <div class="_menu-item group">
+                <button class="_navbar-menu">
                     <span class="mr-1">Digital Marketing</span>
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                 </button>
-                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
-                    <li class="">
-                        <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                            href="#">One</a>
+                <ul class="_menu-content group-hover:block">
+                    <li class="rounded-t bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
+                        <a class="" href=" #">One</a>
                     </li>
                     <li class="">
-                        <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
+                        <a class="bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
                     </li>
                     <li class="">
-                        <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        <a class="rounded-b bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                             href="#">Three
                             is the magic number</a>
                     </li>
                 </ul>
             </div>
-            <div class="group inline-block relative">
-                <button class="font-semibold rounded inline-flex items-center">
+            <div class="_menu-item group">
+                <button class="_navbar-menu">
                     <span class="mr-1">Web Development & Design</span>
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                 </button>
-                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
-                    <li class="">
-                        <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                            href="#">One</a>
+                <ul class="_menu-content group-hover:block">
+                    <li class="rounded-t bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
+                        <a class="" href=" #">One</a>
                     </li>
                     <li class="">
-                        <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
+                        <a class="bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
                     </li>
                     <li class="">
-                        <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        <a class="rounded-b bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                             href="#">Three
                             is the magic number</a>
                     </li>
                 </ul>
             </div>
-            <div class="group inline-block relative">
-                <button class="font-semibold rounded inline-flex items-center">
+            <div class="_menu-item group">
+                <button class="_navbar-menu">
                     <span class="mr-1">Insight Bisnis</span>
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                 </button>
-                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
-                    <li class="">
-                        <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                            href="#">One</a>
+                <ul class="_menu-content group-hover:block">
+                    <li class="rounded-t bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
+                        <a class="" href=" #">One</a>
                     </li>
                     <li class="">
-                        <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
+                        <a class="bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
                     </li>
                     <li class="">
-                        <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        <a class="rounded-b bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                             href="#">Three
                             is the magic number</a>
                     </li>
                 </ul>
             </div>
-            <div class="group inline-block relative">
-                <button class="font-semibold rounded inline-flex items-center">
+            <div class="_menu-item group">
+                <button class="_navbar-menu">
                     <span class="mr-1">News & Updates</span>
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                 </button>
-                <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
-                    <li class="">
-                        <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                            href="#">One</a>
+                <ul class="_menu-content group-hover:block">
+                    <li class="rounded-t bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
+                        <a class="" href=" #">One</a>
                     </li>
                     <li class="">
-                        <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
+                        <a class="bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a>
                     </li>
                     <li class="">
-                        <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        <a class="rounded-b bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                             href="#">Three
                             is the magic number</a>
                     </li>
                 </ul>
             </div>
-        </ul>
-    </nav>
-    <!-- End Section -->
+        </div>
+        <!-- End Section -->
+    </header>
 
     <!-- Main Section -->
     <main class="_container">
@@ -200,9 +202,9 @@
                 <div class="space-y-4">
                     <!-- Breadcrumb -->
                     <nav class="flex" aria-label="Breadcrumb">
-                        <ol class="inline-flex items-center space-x-1 md:space-x-1.5">
+                        <ol class="_breadcrumb">
                             <li class="inline-flex items-center">
-                                <a href="#" class="inline-flex items-center text-caption-2 text-primary-hosterBlue">
+                                <a href="#" class="_breadcrumb-nav">
                                     Home
                                 </a>
                             </li>
@@ -214,7 +216,7 @@
                                             d="M16.0402 11.29L10.3802 5.64004C10.2873 5.54631 10.1767 5.47191 10.0548 5.42115C9.93294 5.37038 9.80224 5.34424 9.67023 5.34424C9.53821 5.34424 9.40751 5.37038 9.28565 5.42115C9.16379 5.47191 9.05319 5.54631 8.96023 5.64004C8.77398 5.8274 8.66943 6.08085 8.66943 6.34504C8.66943 6.60922 8.77398 6.86267 8.96023 7.05004L13.9102 12.05L8.96023 17C8.77398 17.1874 8.66943 17.4409 8.66943 17.705C8.66943 17.9692 8.77398 18.2227 8.96023 18.41C9.05284 18.5045 9.16329 18.5797 9.28516 18.6312C9.40704 18.6827 9.53792 18.7095 9.67023 18.71C9.80253 18.7095 9.93342 18.6827 10.0553 18.6312C10.1772 18.5797 10.2876 18.5045 10.3802 18.41L16.0402 12.76C16.1417 12.6664 16.2227 12.5527 16.2781 12.4262C16.3336 12.2997 16.3622 12.1631 16.3622 12.025C16.3622 11.8869 16.3336 11.7503 16.2781 11.6238C16.2227 11.4973 16.1417 11.3837 16.0402 11.29V11.29Z"
                                             fill="#29384E" />
                                     </svg>
-                                    <a href="#" class="ml-1 text-caption-2 text-primary-hosterBlue md:ml-2">Tutorial</a>
+                                    <a href="#" class="_breadcrumb-nav">Tutorial</a>
                                 </div>
                             </li>
                             <li aria-current="page">
@@ -225,7 +227,7 @@
                                             d="M16.0402 11.29L10.3802 5.64004C10.2873 5.54631 10.1767 5.47191 10.0548 5.42115C9.93294 5.37038 9.80224 5.34424 9.67023 5.34424C9.53821 5.34424 9.40751 5.37038 9.28565 5.42115C9.16379 5.47191 9.05319 5.54631 8.96023 5.64004C8.77398 5.8274 8.66943 6.08085 8.66943 6.34504C8.66943 6.60922 8.77398 6.86267 8.96023 7.05004L13.9102 12.05L8.96023 17C8.77398 17.1874 8.66943 17.4409 8.66943 17.705C8.66943 17.9692 8.77398 18.2227 8.96023 18.41C9.05284 18.5045 9.16329 18.5797 9.28516 18.6312C9.40704 18.6827 9.53792 18.7095 9.67023 18.71C9.80253 18.7095 9.93342 18.6827 10.0553 18.6312C10.1772 18.5797 10.2876 18.5045 10.3802 18.41L16.0402 12.76C16.1417 12.6664 16.2227 12.5527 16.2781 12.4262C16.3336 12.2997 16.3622 12.1631 16.3622 12.025C16.3622 11.8869 16.3336 11.7503 16.2781 11.6238C16.2227 11.4973 16.1417 11.3837 16.0402 11.29V11.29Z"
                                             fill="#29384E" />
                                     </svg>
-                                    <a href="#" class="ml-1 text-caption-2 text-primary-hosterBlue md:ml-2">Hosting</a>
+                                    <a href="#" class="_breadcrumb-nav">Hosting</a>
                                 </div>
                             </li>
                         </ol>
@@ -233,25 +235,31 @@
                     <!-- End  -->
 
                     <!-- Title -->
-                    <h6 class="text-h6">4+ Cara Mudah Cek IP Hosting Website</h6>
+                    <h6 class="text-h6 text-textColor-primary">4+ Cara Mudah Cek IP Hosting Website</h6>
                     <!-- End Title -->
 
-                    <!-- Profile -->
-                    <div class="flex items-center space-x-3">
-                        <img src="./assets/img/mini-profile.png" class="w-6" alt="">
-                        <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                    <!-- Name Tag -->
+                    <div class="_name-tag">
+                        <img src="./assets/img/mini-profile.png" class="_name-tag-profile" alt="">
+                        <span class="_name-tag-text">Nida Regita F</span>
                     </div>
-                    <!-- End -->
+                    <!-- End Name Tag -->
 
                     <!-- Tag -->
-                    <div class="flex items-center gap-x-4">
-                        <span class="text-body-5 text-textColor-primary">
-                            28 Dec 2021
-                        </span>
-                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="2" cy="2" r="2" fill="#29384E" />
-                        </svg>
-                        <span class="text-body-5 text-textColor-primary">5 min read</span>
+                    <div class="_content-tag">
+                        <div class="_tag-info">
+                            <span class="_tag-text">
+                                28 Dec 2021
+                            </span>
+                        </div>
+                        <div class="_tag-info">
+                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#29384E" />
+                            </svg>
+                            <span class="_tag-text">
+                                5 min read
+                            </span>
+                        </div>
                     </div>
                     <!-- End Tag -->
                 </div>
@@ -261,6 +269,7 @@
 
                 <!-- Action Buttons -->
                 <div class="flex space-x-6">
+                    <!-- Like Buttons -->
                     <div class="flex space-x-3 items-center">
                         <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -269,6 +278,9 @@
                         </svg>
                         <span class="text-sub-6 font-semibold text-textColor-secondary">111</span>
                     </div>
+                    <!-- End Like Buttons -->
+
+                    <!-- Comment Buttons -->
                     <div class="flex space-x-3 items-center">
                         <button data-modal-toggle="top-right-modal">
                             <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -280,6 +292,9 @@
                         </button>
                         <span class="text-sub-6 font-semibold text-textColor-secondary">4</span>
                     </div>
+                    <!-- End Comment Buttons -->
+
+                    <!-- Share Buttons -->
                     <div class="flex space-x-3 items-center">
                         <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -288,6 +303,7 @@
                         </svg>
                         <span class="text-sub-6 font-semibold text-textColor-secondary">Share</span>
                     </div>
+                    <!-- End Share Buttons -->
                 </div>
                 <!-- End -->
 
@@ -296,9 +312,9 @@
             <div class="col-start-4 col-span-7 pt-[3.375rem]">
                 <!-- Breadcrumb -->
                 <nav class="flex" aria-label="Breadcrumb">
-                    <ol class="inline-flex items-center space-x-1 md:space-x-1.5">
+                    <ol class="_breadcrumb">
                         <li class="inline-flex items-center">
-                            <a href="#" class="inline-flex items-center text-caption-2 text-primary-hosterBlue">
+                            <a href="#" class="_breadcrumb-nav">
                                 Home
                             </a>
                         </li>
@@ -310,7 +326,7 @@
                                         d="M16.0402 11.29L10.3802 5.64004C10.2873 5.54631 10.1767 5.47191 10.0548 5.42115C9.93294 5.37038 9.80224 5.34424 9.67023 5.34424C9.53821 5.34424 9.40751 5.37038 9.28565 5.42115C9.16379 5.47191 9.05319 5.54631 8.96023 5.64004C8.77398 5.8274 8.66943 6.08085 8.66943 6.34504C8.66943 6.60922 8.77398 6.86267 8.96023 7.05004L13.9102 12.05L8.96023 17C8.77398 17.1874 8.66943 17.4409 8.66943 17.705C8.66943 17.9692 8.77398 18.2227 8.96023 18.41C9.05284 18.5045 9.16329 18.5797 9.28516 18.6312C9.40704 18.6827 9.53792 18.7095 9.67023 18.71C9.80253 18.7095 9.93342 18.6827 10.0553 18.6312C10.1772 18.5797 10.2876 18.5045 10.3802 18.41L16.0402 12.76C16.1417 12.6664 16.2227 12.5527 16.2781 12.4262C16.3336 12.2997 16.3622 12.1631 16.3622 12.025C16.3622 11.8869 16.3336 11.7503 16.2781 11.6238C16.2227 11.4973 16.1417 11.3837 16.0402 11.29V11.29Z"
                                         fill="#29384E" />
                                 </svg>
-                                <a href="#" class="ml-1 text-caption-2 text-primary-hosterBlue md:ml-2">Tutorial</a>
+                                <a href="#" class="_breadcrumb-nav">Tutorial</a>
                             </div>
                         </li>
                         <li aria-current="page">
@@ -321,7 +337,7 @@
                                         d="M16.0402 11.29L10.3802 5.64004C10.2873 5.54631 10.1767 5.47191 10.0548 5.42115C9.93294 5.37038 9.80224 5.34424 9.67023 5.34424C9.53821 5.34424 9.40751 5.37038 9.28565 5.42115C9.16379 5.47191 9.05319 5.54631 8.96023 5.64004C8.77398 5.8274 8.66943 6.08085 8.66943 6.34504C8.66943 6.60922 8.77398 6.86267 8.96023 7.05004L13.9102 12.05L8.96023 17C8.77398 17.1874 8.66943 17.4409 8.66943 17.705C8.66943 17.9692 8.77398 18.2227 8.96023 18.41C9.05284 18.5045 9.16329 18.5797 9.28516 18.6312C9.40704 18.6827 9.53792 18.7095 9.67023 18.71C9.80253 18.7095 9.93342 18.6827 10.0553 18.6312C10.1772 18.5797 10.2876 18.5045 10.3802 18.41L16.0402 12.76C16.1417 12.6664 16.2227 12.5527 16.2781 12.4262C16.3336 12.2997 16.3622 12.1631 16.3622 12.025C16.3622 11.8869 16.3336 11.7503 16.2781 11.6238C16.2227 11.4973 16.1417 11.3837 16.0402 11.29V11.29Z"
                                         fill="#29384E" />
                                 </svg>
-                                <a href="#" class="ml-1 text-caption-2 text-primary-hosterBlue md:ml-2">Hosting</a>
+                                <a href="#" class="_breadcrumb-nav">Hosting</a>
                             </div>
                         </li>
                         <li aria-current="page">
@@ -332,13 +348,13 @@
                                         d="M16.0402 11.29L10.3802 5.64004C10.2873 5.54631 10.1767 5.47191 10.0548 5.42115C9.93294 5.37038 9.80224 5.34424 9.67023 5.34424C9.53821 5.34424 9.40751 5.37038 9.28565 5.42115C9.16379 5.47191 9.05319 5.54631 8.96023 5.64004C8.77398 5.8274 8.66943 6.08085 8.66943 6.34504C8.66943 6.60922 8.77398 6.86267 8.96023 7.05004L13.9102 12.05L8.96023 17C8.77398 17.1874 8.66943 17.4409 8.66943 17.705C8.66943 17.9692 8.77398 18.2227 8.96023 18.41C9.05284 18.5045 9.16329 18.5797 9.28516 18.6312C9.40704 18.6827 9.53792 18.7095 9.67023 18.71C9.80253 18.7095 9.93342 18.6827 10.0553 18.6312C10.1772 18.5797 10.2876 18.5045 10.3802 18.41L16.0402 12.76C16.1417 12.6664 16.2227 12.5527 16.2781 12.4262C16.3336 12.2997 16.3622 12.1631 16.3622 12.025C16.3622 11.8869 16.3336 11.7503 16.2781 11.6238C16.2227 11.4973 16.1417 11.3837 16.0402 11.29V11.29Z"
                                         fill="#29384E" />
                                 </svg>
-                                <span class="ml-1 text-caption-2 text-textColor-secondary md:ml-2">4+ Cara Mudah
-                                    Cek IP Hosting Website</span>
+                                <a href="#" class="_breadcrumb-disabled _disabled">4+ Cara Mudah Cek IP Hosting
+                                    Website</a>
                             </div>
                         </li>
                     </ol>
                 </nav>
-                <!-- End -->
+                <!-- End  -->
 
                 <!-- Header -->
                 <div class="space-y-4 py-9">
@@ -569,7 +585,7 @@
                         onkeyup="isEmpty()"></textarea>
                     <div class="flex justify-end space-x-3 trigger">
                         <button id="test" class="btn-small btn-text">Cancel</button>
-                        <button class="btn-small btn-primary">Comment</button>
+                        <button class="btn-small _btn-primary">Comment</button>
                     </div>
                 </div>
 
@@ -716,20 +732,20 @@
         <!-- Banner Section -->
         <section class="my-20">
             <!-- Banner -->
-            <div class="bg-linear p-9 rounded-3xl">
-                <div class="grid grid-cols-9 items-center">
-                    <div class="col-span-5 space-y-6">
-                        <h1 class="text-h5 text-white">Ingin jadi yang pertama tau <br> artikel terbaru
+            <div class="_banner-full">
+                <div class="_banner-container">
+                    <div class="_banner-headline">
+                        <h1 class="_headline-title">Ingin jadi yang pertama tau <br> artikel terbaru
                             kami?
                         </h1>
-                        <p class="text-body-3 text-white">Kami akan mengirimkan pemberitahuan artikel
+                        <p class="_headline-desc">Kami akan mengirimkan pemberitahuan artikel
                             terbaru
                             kami melalui
                             email Anda. Ingin
                             mendapatkan pemberitahuan?</p>
                     </div>
-                    <div class="col-span-4 flex justify-end">
-                        <button class="btn-large bg-btn-primaryState text-white">Langganan Sekarang</button>
+                    <div class="_banner-btn-section">
+                        <button class="btn-large _btn-primary">Langganan Sekarang</button>
                     </div>
                 </div>
             </div>
@@ -744,24 +760,23 @@
             <div class="grid grid-cols-12 gap-x-[1.875rem] mt-9">
 
                 <!-- Content -->
-                <div class="col-span-3 space-y-3">
-
+                <div class="_content-grid">
                     <!-- Thumbnail -->
                     <img src="./assets/img/artikel-img-2.png" class="w-max rounded-md" alt="">
                     <!-- End Thumbnail -->
 
-                    <!-- Profile -->
-                    <div class="flex items-center space-x-3">
-                        <img src="./assets/img/mini-profile.png" class="w-6" alt="">
-                        <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                    <!-- Name Tag -->
+                    <div class="_name-tag">
+                        <img src="./assets/img/mini-profile.png" class="_name-tag-profile" alt="">
+                        <span class="_name-tag-text">Nida Regita F</span>
                     </div>
-                    <!-- End -->
+                    <!-- End Name Tag -->
 
                     <!-- Article Title & Description -->
-                    <div class="mt-4 space-y-2">
-                        <h6 class="text-h8 text-textColor-primary">4+ Cara Mudah Cek IP Hosting Website
+                    <div class="_content-body">
+                        <h6 class="_body-title">4+ Cara Mudah Cek IP Hosting Website
                         </h6>
-                        <p class="text-caption-2 text-textColor-secondary">Anda ingin tahu cara cek IP
+                        <p class="_body-desc">Anda ingin tahu cara cek IP
                             hosting?
                             Selamat, Anda berada di
                             halaman yang tepat! IP
@@ -771,38 +786,39 @@
                     <!-- End -->
 
                     <!-- Tag -->
-                    <div class="flex items-center gap-x-3">
-                        <span
-                            class="text-body-5 text-primary-hosterBlue px-4 py-0.5 bg-primary-lightBlue rounded-4xl">Hosting</span>
-                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="2" cy="2" r="2" fill="#29384E" />
-                        </svg>
-                        <span class="text-body-5 text-textColor-primary">5 min read</span>
+                    <div class="_content-tag">
+                        <span class="_badge">Hosting</span>
+                        <div class="_tag-info">
+                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#29384E" />
+                            </svg>
+                            <span class="_tag-text">
+                                5 min read
+                            </span>
+                        </div>
                     </div>
                     <!-- End Tag -->
-
                 </div>
-                <!-- End -->
+                <!-- End Content -->
 
                 <!-- Content -->
-                <div class="col-span-3 space-y-3">
-
+                <div class="_content-grid">
                     <!-- Thumbnail -->
                     <img src="./assets/img/artikel-img-2.png" class="w-max rounded-md" alt="">
                     <!-- End Thumbnail -->
 
-                    <!-- Profile -->
-                    <div class="flex items-center space-x-3">
-                        <img src="./assets/img/mini-profile.png" class="w-6" alt="">
-                        <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                    <!-- Name Tag -->
+                    <div class="_name-tag">
+                        <img src="./assets/img/mini-profile.png" class="_name-tag-profile" alt="">
+                        <span class="_name-tag-text">Nida Regita F</span>
                     </div>
-                    <!-- End -->
+                    <!-- End Name Tag -->
 
                     <!-- Article Title & Description -->
-                    <div class="mt-4 space-y-2">
-                        <h6 class="text-h8 text-textColor-primary">4+ Cara Mudah Cek IP Hosting Website
+                    <div class="_content-body">
+                        <h6 class="_body-title">4+ Cara Mudah Cek IP Hosting Website
                         </h6>
-                        <p class="text-caption-2 text-textColor-secondary">Anda ingin tahu cara cek IP
+                        <p class="_body-desc">Anda ingin tahu cara cek IP
                             hosting?
                             Selamat, Anda berada di
                             halaman yang tepat! IP
@@ -812,38 +828,39 @@
                     <!-- End -->
 
                     <!-- Tag -->
-                    <div class="flex items-center gap-x-3">
-                        <span
-                            class="text-body-5 text-primary-hosterBlue px-4 py-0.5 bg-primary-lightBlue rounded-4xl">Hosting</span>
-                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="2" cy="2" r="2" fill="#29384E" />
-                        </svg>
-                        <span class="text-body-5 text-textColor-primary">5 min read</span>
+                    <div class="_content-tag">
+                        <span class="_badge">Hosting</span>
+                        <div class="_tag-info">
+                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#29384E" />
+                            </svg>
+                            <span class="_tag-text">
+                                5 min read
+                            </span>
+                        </div>
                     </div>
                     <!-- End Tag -->
-
                 </div>
-                <!-- End -->
+                <!-- End Content -->
 
                 <!-- Content -->
-                <div class="col-span-3 space-y-3">
-
+                <div class="_content-grid">
                     <!-- Thumbnail -->
                     <img src="./assets/img/artikel-img-2.png" class="w-max rounded-md" alt="">
                     <!-- End Thumbnail -->
 
-                    <!-- Profile -->
-                    <div class="flex items-center space-x-3">
-                        <img src="./assets/img/mini-profile.png" class="w-6" alt="">
-                        <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                    <!-- Name Tag -->
+                    <div class="_name-tag">
+                        <img src="./assets/img/mini-profile.png" class="_name-tag-profile" alt="">
+                        <span class="_name-tag-text">Nida Regita F</span>
                     </div>
-                    <!-- End -->
+                    <!-- End Name Tag -->
 
                     <!-- Article Title & Description -->
-                    <div class="mt-4 space-y-2">
-                        <h6 class="text-h8 text-textColor-primary">4+ Cara Mudah Cek IP Hosting Website
+                    <div class="_content-body">
+                        <h6 class="_body-title">4+ Cara Mudah Cek IP Hosting Website
                         </h6>
-                        <p class="text-caption-2 text-textColor-secondary">Anda ingin tahu cara cek IP
+                        <p class="_body-desc">Anda ingin tahu cara cek IP
                             hosting?
                             Selamat, Anda berada di
                             halaman yang tepat! IP
@@ -853,38 +870,39 @@
                     <!-- End -->
 
                     <!-- Tag -->
-                    <div class="flex items-center gap-x-3">
-                        <span
-                            class="text-body-5 text-primary-hosterBlue px-4 py-0.5 bg-primary-lightBlue rounded-4xl">Hosting</span>
-                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="2" cy="2" r="2" fill="#29384E" />
-                        </svg>
-                        <span class="text-body-5 text-textColor-primary">5 min read</span>
+                    <div class="_content-tag">
+                        <span class="_badge">Hosting</span>
+                        <div class="_tag-info">
+                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#29384E" />
+                            </svg>
+                            <span class="_tag-text">
+                                5 min read
+                            </span>
+                        </div>
                     </div>
                     <!-- End Tag -->
-
                 </div>
-                <!-- End -->
+                <!-- End Content -->
 
                 <!-- Content -->
-                <div class="col-span-3 space-y-3">
-
+                <div class="_content-grid">
                     <!-- Thumbnail -->
                     <img src="./assets/img/artikel-img-2.png" class="w-max rounded-md" alt="">
                     <!-- End Thumbnail -->
 
-                    <!-- Profile -->
-                    <div class="flex items-center space-x-3">
-                        <img src="./assets/img/mini-profile.png" class="w-6" alt="">
-                        <span class="text-body-5-alt text-textColor-primary">Nida Regita F</span>
+                    <!-- Name Tag -->
+                    <div class="_name-tag">
+                        <img src="./assets/img/mini-profile.png" class="_name-tag-profile" alt="">
+                        <span class="_name-tag-text">Nida Regita F</span>
                     </div>
-                    <!-- End -->
+                    <!-- End Name Tag -->
 
                     <!-- Article Title & Description -->
-                    <div class="mt-4 space-y-2">
-                        <h6 class="text-h8 text-textColor-primary">4+ Cara Mudah Cek IP Hosting Website
+                    <div class="_content-body">
+                        <h6 class="_body-title">4+ Cara Mudah Cek IP Hosting Website
                         </h6>
-                        <p class="text-caption-2 text-textColor-secondary">Anda ingin tahu cara cek IP
+                        <p class="_body-desc">Anda ingin tahu cara cek IP
                             hosting?
                             Selamat, Anda berada di
                             halaman yang tepat! IP
@@ -894,27 +912,29 @@
                     <!-- End -->
 
                     <!-- Tag -->
-                    <div class="flex items-center gap-x-3">
-                        <span
-                            class="text-body-5 text-primary-hosterBlue px-4 py-0.5 bg-primary-lightBlue rounded-4xl">Hosting</span>
-                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="2" cy="2" r="2" fill="#29384E" />
-                        </svg>
-                        <span class="text-body-5 text-textColor-primary">5 min read</span>
+                    <div class="_content-tag">
+                        <span class="_badge">Hosting</span>
+                        <div class="_tag-info">
+                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#29384E" />
+                            </svg>
+                            <span class="_tag-text">
+                                5 min read
+                            </span>
+                        </div>
                     </div>
                     <!-- End Tag -->
-
                 </div>
-                <!-- End -->
+                <!-- End Content -->
 
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-linear py-[5.75rem]">
-        <h1 class="text-center text-h2 text-white">Awali Kesuksesan Anda Bersama Niagahoster</h1>
-        <p class="text-center text-body-3 text-primary-lightBlue mt-7 mb-[2.625rem]">Kini tidak lagi sulit
+    <section class="_cta-section">
+        <h1 class="text-center _text-h2 text-white">Awali Kesuksesan Anda Bersama Niagahoster</h1>
+        <p class="text-center _paragraph-3 text-primary-lightBlue mt-7 mb-[2.625rem]">Kini tidak lagi sulit
             mewujudkan website
             impian.
             Performa hebat,
@@ -924,187 +944,182 @@
             dukungan teknis yang bisa diandalkan - semua dengan harga terjangkau!
         </p>
         <div class="flex justify-center">
-            <button class="btn-large bg-btn-primaryState text-white">Mulai Sekarang</button>
+            <button class="btn-large _btn-primary">Mulai Sekarang</button>
         </div>
     </section>
     <!-- End Section -->
 
     <!-- Footer Section -->
-    <footer class="pt-24 pb-[2.625rem] bg-background-veryDarkBlue">
+    <footer class="_footer">
         <!-- Footer Container -->
         <div class="_container">
             <!-- Footer Top -->
             <div class="grid grid-cols-12">
                 <div class="col-span-3 space-y-8">
                     <ul>
-                        <li class="text-white text-h8 font-bold mb-4">Web Hosting</li>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Hosting Indonesia</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Cloud Hosting</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Email Hosting</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Web Hosting Unlimited</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Hosting Terbaik</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Hosting Murah</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Hosting Singapore SG</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Keamanan SSL/HTTPS</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Data Center Hosting Terbaik</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Hosting Gratis</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Transfer Hosting</li>
-                        </a>
+                        <li class="_footer-title">Web Hosting</li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Hosting Indonesia</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Cloud Hosting</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Email Hosting</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Web Hosting Unlimited</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Hosting Terbaik</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Hosting Murah</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Hosting Singapore SG</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Keamanan SSL/HTTPS</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Data Center Hosting Terbaik</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Hosting Gratis</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Transfer Hosting</a>
+                        </li>
                     </ul>
                     <ul>
-                        <li class="text-white text-h8 font-bold mb-4">Domain</li>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Domain</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Domain .ID</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Domain Gratis</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Promosi Domain .COM</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">WHOIS</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Transfer Domain</li>
-                        </a>
+                        <li class="_footer-title">Domain</li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Domain</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Domain .ID</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Domain Gratis</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Promosi Domain .COM</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">WHOIS</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Transfer Domain</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-span-3 space-y-8">
                     <ul>
-                        <li class="text-white text-h8 font-bold mb-4">Virtual Private Server</li>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">VPS KVM Indonesia</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Cloud VPS Hosting</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">CyberPanel VPS Hosting</li>
-                        </a>
+                        <li class="_footer-title">Virtual Private Server</li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">VPS KVM Indonesia</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Cloud VPS Hosting</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">CyberPanel VPS Hosting</a>
+                        </li>
                     </ul>
                     <ul>
-                        <li class="text-white text-h8 font-bold mb-4">Wordpress Hosting</li>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Wordpress Hosting</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Managed Wordpress</li>
-                        </a>
+                        <li class="_footer-title">Wordpress Hosting</li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Wordpress Hosting</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Managed Wordpress</a>
+                        </li>
                     </ul>
                     <ul>
-                        <li class="text-white text-h8 font-bold mb-4">Website</li>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Website Instan</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Jasa Pembuatan Website</li>
-                        </a>
+                        <li class="_footer-title">Website</li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Website Instan</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Jasa Pembuatan Website</a>
+                        </li>
                     </ul>
                     <ul>
-                        <li class="text-white text-h8 font-bold mb-4">Bantuan</li>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Cara Pembayaran</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Ebook Gratis</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Knowledge Base</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Blog</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Course</li>
-                        </a>
-                        <a href="#">
-                            <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Forum</li>
-                        </a>
+                        <li class="_footer-title">Bantuan</li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Cara Pembayaran</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Ebook Gratis</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Knowledge Base</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Niagahoster Blog</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Niagahoster Course</a>
+                        </li>
+                        <li class="_footer-item">
+                            <a href="#" class="_footer-nav">Niagahoster Forum</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-span-6">
                     <div class="grid grid-cols-6">
                         <div class="col-span-3 space-y-8">
                             <ul>
-                                <li class="text-white text-h8 font-bold mb-4">Kemitraan</li>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Poin</li>
-                                </a>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Partner</li>
-                                </a>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Program Afiliasi
-                                        Niagahoster
-                                    </li>
-                                </a>
+                                <li class="_footer-title">Kemitraan</li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Niagahoster Poin</a>
+                                </li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Niagahoster Partner</a>
+                                </li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Program Afiliasi Niagahoster</a>
+                                </li>
                             </ul>
                             <ul>
-                                <li class="text-white text-h8 font-bold mb-4">Perusahaan</li>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Tentang Niagahoster</li>
-                                </a>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Kontak</li>
-                                </a>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Karir</li>
-                                </a>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Event</li>
-                                </a>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Status Layanan</li>
-                                </a>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Review Pelanggan</li>
-                                </a>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Penawaran & Promo Spesial
-                                    </li>
-                                </a>
-                                <a href="#">
-                                    <li class="text-textColor-secondary2 text-body-4-alt mb-2">Niagahoster Virtual
-                                        Summit
-                                    </li>
-                                </a>
+                                <li class="_footer-title">Perusahaan</li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Tentang Niagahoster</a>
+                                </li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Kontak</a>
+                                </li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Karir</a>
+                                </li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Event</a>
+                                </li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Status Layanan</a>
+                                </li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Review Pelanggan</a>
+                                </li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Penawaran & Promo Spesial</a>
+                                </li>
+                                <li class="_footer-item">
+                                    <a href="#" class="_footer-nav">Niagahoster Virtual Summit</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-span-3 space-y-8">
                             <img src="./assets/img/footer-logo.png" class="w-[15.938rem]" alt="">
                             <!-- Detail 1 -->
-                            <p class="text-white text-body-4-alt">Misi kami adalah membantu jutaan <br> orang
+                            <p class="_footer-text">Misi kami adalah membantu jutaan <br> orang
                                 memanfaatkan
                                 potensi yang ada <br> di internet untuk membangun <br> kesuksesan online.</p>
                             <!-- End -->
 
                             <!-- Detail 2 -->
-                            <p class="text-white text-body-4-alt">Jl. Palagan Tentara Pelajar No 81 <br> Jongkang,
+                            <p class="_footer-text">Jl. Palagan Tentara Pelajar No 81 <br> Jongkang,
                                 Sariharjo,
                                 Ngaglik, Sleman <br> Daerah Istimewa Yogyakarta 55581</p>
 
@@ -1112,9 +1127,9 @@
 
                             <!-- Detail 3 -->
                             <ul>
-                                <li class="text-white text-body-4-alt">Telepon: 0274-2885822</li>
-                                <li class="text-white text-body-4-alt">Whatsapp: 085943258274</li>
-                                <li class="text-white text-body-4-alt">Telegram: @niagahost_bot</li>
+                                <li class="_footer-text">Telepon: 0274-2885822</li>
+                                <li class="_footer-text">Whatsapp: 085943258274</li>
+                                <li class="_footer-text">Telegram: @niagahost_bot</li>
                             </ul>
                             <!-- End -->
 
@@ -1183,19 +1198,19 @@
 
                         </div>
                         <div class="col-span-6 mt-[1.875rem]">
+                            <!-- Newsletter -->
                             <form class="">
                                 <div class="space-y-4">
-                                    <label for="text"
-                                        class="block mb-2 text-button-4 font-bold text-white">Newsletter</label>
+                                    <label for="text" class="_form-label">Newsletter</label>
                                     <div class="flex space-x-3">
-                                        <input type="text" id="input"
-                                            class="bg-white border border-other-border text-gray-900 text-body-3 rounded-3xl focus:ring-primary-hosterBlue focus:border-primary-hosterBlue block w-[22rem] px-8 py-3"
+                                        <input type="text" id="input" class="_form-input"
                                             placeholder="Write your input here" required>
                                         <button type="submit"
-                                            class="text-white btn-medium bg-btn-primaryState focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold">Berlangganan</button>
+                                            class="btn-medium _btn-primary _elevation-btn-primary-1">Berlangganan</button>
                                     </div>
                                 </div>
                             </form>
+                            <!-- End Newsletter -->
                         </div>
                     </div>
                 </div>
@@ -1232,33 +1247,6 @@
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
-<script>
-    // Textarea Function
-    $('.trigger').hide();
-
-    $('#textarea').on('keyup', function () {
-        if (this.value.length) {
-            $('.trigger').show();
-        } else {
-            $('.trigger').hide();
-        }
-    });
-    // End Function
-
-    // Replied Function
-    function repliedFunction() {
-        const targetDiv = document.getElementById("replied-section");
-        if (targetDiv.className == "hide") {
-            targetDiv.className = "show";
-            document.getElementById("replied-section").style.transition = "all 2s";
-            document.getElementById("replied-btn").innerHTML = "Sembunyikan Balasan";
-        } else {
-            targetDiv.className = "hide";
-            document.getElementById("replied-section").style.transition = "all 2s";
-            document.getElementById("replied-btn").innerHTML = "Tampilkan Balasan";
-        }
-    }
-    // End Function
-</script>
+<script src="main.js"></script>
 
 </html>
