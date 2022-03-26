@@ -8,3 +8,7 @@ NOTE :
 - The Component that I imported to Library still 50% - 60% (Based on design needs first).
 - The design implementation is 100% done (some function that need JS still not working yet).
 - This project still 80% progress.
+- View this website in dekstop screen (Recommend 1440px)
+- The responsive layout still not working yet (Under Construction)
+
+
